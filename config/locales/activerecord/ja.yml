@@ -1,0 +1,30 @@
+ja:
+  activerecord:
+    models:
+      brand: 'ブランド'
+      general_user_information: 'ユーザー'
+    attributes:
+      brand:
+        name: 'ブランドネーム'
+        brand_description: 'ブランド説明'
+        instagram_user_name: 'Instagram ID (ユーザーネーム)'
+        start_up: 'ブランド立ち上げ日(年/月/日)'
+        brand_image: 'ブランドアイコン写真'
+        instagram_image: 'Instagramのトップ画面のスクリーンショット'
+      item:
+        id: 'ID'
+        name: 'アイテム名'
+        description: 'アイテム説明'
+        item_image: 'メイン写真'
+        dress_images: 'コーディネート写真'
+        created_at: '投稿日'
+      general_user_information:
+        name: 'ユーザーネーム'
+        email: 'メールアドレス'
+        passsword: 'Password'
+        password_confirmation: 'Password 再入力'
+      owner_information:
+        name: 'オーナーネーム'
+        email: 'メールアドレス'
+        passsword: 'Password'
+        password_confirmation: 'Password 再入力'
