@@ -35,4 +35,13 @@
 yarn-debug.log*
 .yarn-integrity
 
-/node_modules
+
+# Ignore bundler config.
+/.bundle
+vendor/bundle
+
+# git 管理から外す
+vendor/bundle
+
+# アップロードされた画像をgitの管理から外す
+/public/uploads
