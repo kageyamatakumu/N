@@ -1,0 +1,27 @@
+<footer class = "footer">
+    <div class = "inner">
+        <nav class = "nav-wrap">
+            <ul class = "nav-list">
+                <%
+=begin%>
+ <li class = "nav-item">
+                    <%= link_to (t'.terms'), terms_path %>
+                </li>
+                <li class = "nav-item">
+                    <%= link_to (t'.privacy'), privacy_path %>
+                </li>
+                <li class = "nav-item">
+                    <%= link_to (t'.contact'), contact_path %>
+                </li> 
+<%
+=end%>
+            <ul>
+        </nav>
+        <div class = "footer-logo">
+            <%= image_tag 'NEMO_logo.jpg' %>
+        </div>
+        <div class = "copyright">
+            <%= t'.copyright' %>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,266 @@
+.header {
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    .header-fixed{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        .header-log{
+            display: flex;
+            align-items: center;
+            .nemo_image{
+                width: 35px;
+                height: 35px;
+            }
+            h2{
+                margin-left: 20px;
+                font-size: 24px;
+                color: #ffffff;
+            }
+        }
+        .header-nav{
+            .nav-wrap{
+                .nav-list{
+                    display: flex;
+                    list-style: none;
+                    .item{
+                        .search{
+                            position: relative;
+                            display: flex;
+                            .search-form{
+                                width: 200px;
+                                height: 30px;
+                                border-radius: 5px;
+                                padding-left: 8px;
+                                padding-right: 8px;
+                                font-size: 12px;
+                                border: 0;
+                                outline: 0;
+                                background-color: #696967;
+                                opacity: 0.7;
+                                color: #fff;
+                            }
+                            ::placeholder {
+                                color: #fff;
+                                font-size: 12px;
+                            }
+                            .search_button{
+                                border-radius: 5px;
+                                .btn{
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    height: 30px;
+                                    cursor: pointer;
+                                    border: none;
+                                    outline : none;
+                                    background-color: #696967;
+                                    border-top-right-radius: 5px;
+                                    border-bottom-right-radius: 5px;
+                                    color: #fff;
+                                    font-size: 12px;
+                                    padding-left: 5px;
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                        a {
+                            font-size: 16px;
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+                        button{
+                            text-decoration: none;
+                            color: var(--white);
+                            background-color: transparent;
+                            border: none;
+                            cursor: pointer;
+                            outline: none;
+                            padding: 0;
+                            appearance: none;
+                            font-size: 16px;
+                            color: #ffffff;
+                        }
+                    }
+                    .item:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// レスポンシブ
+@media (max-width: 991px){
+    .header{
+        .header-fixed{
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+}
+
+
+@media (max-width:630px) {
+    .header{
+        height: 40px;
+        .header-fixed{
+            width: 100%;
+            .header-log{
+                padding-left: 10px;
+                .nemo_image{
+                    width: 25px;
+                    height: 25px;
+                    object-fit: cover;
+                }
+                h2{
+                    margin-left: 10px;
+                    font-size: 16px;
+                }
+            }
+            .header-nav{
+                .nav-wrap{
+                    .nav-list{
+                        padding-left: 0;
+                        .item{
+                            padding-right: 5px;
+                            .search{
+                                margin-top: 5px;
+                                align-items: center;
+                                .search-form{
+                                    width: 150px;
+                                    height: 20px;
+                                    font-size: 10px;
+                                    padding-left: 3px;
+                                    padding-right: 3px;
+                                }
+                                ::placeholder {
+                                    font-size: 10px;
+                                }
+                                .search_button{
+                                    .btn{
+                                        height: 20px;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                            a{
+                                font-size: 60%;
+                            }
+                            button{
+                                font-size: 60%;
+                            }
+                        }
+                        .item:not(:last-child){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .header{
+        height: 40px;
+        .header-fixed{
+            width: 100%;
+            .header-log{
+                padding-left: 10px;
+                .nemo_image{
+                    width: 25px;
+                    height: 25px;
+                    object-fit: cover;
+                }
+                h2{
+                    margin-left: 10px;
+                    font-size: 16px;
+                }
+            }
+            .header-nav{
+                .nav-wrap{
+                    .nav-list{
+                        padding-left: 0;
+                        .item{
+                            padding-right: 5px;
+                            .search{
+                                margin-top: 5px;
+                                .search-form{
+                                    font-size: 8px;
+                                }
+                                .search_button{
+                                    .btn{
+                                        height: 20px;
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                            a{
+                                font-size: 40%;
+                            }
+                            button{
+                                font-size: 40%;
+                            }
+                        }
+                        .item:not(:last-child){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .header{
+        .header-fixed{
+            .header-nav{
+                .nav-wrap{
+                    .nav-list{
+                        .item{
+                            .search{
+                                .search-form{
+                                    font-size: 5px;
+                                    width: 130px;
+                                }
+                                ::placeholder{
+                                    font-size: 3px;
+                                }
+                                .search_button{
+                                    .btn{
+                                        height: 20px;
+                                        font-size: 5px;
+                                    }
+                                }
+                            }
+                            a{
+                                font-size: 40%;
+                            }
+                            button{
+                                font-size: 40%;
+                            }
+                        }
+                        .item:not(:last-child){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
