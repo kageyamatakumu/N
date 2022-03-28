@@ -1,0 +1,30 @@
+<% content_for(:title, t('.title')) %>
+<div class="details">
+    <div class="recentOrders">
+        <div class="cardHeader">
+            <h1><%= t '.title' %></h1>
+        </div>
+            <table class="table table-bordered bg-dark">
+                <tr>
+                    <th scope="row"><%= Item.human_attribute_name(:name) %></th>
+                    <td><%= @item.name %></td>
+                </tr>
+                <tr>
+                    <th scope="row"><%= Item.human_attribute_name(:description) %></th>
+                    <td><%= @item.description%></td>
+                </tr>
+                <tr>
+                    <th scope="row"><%= Item.human_attribute_name(:item_image) %></th>
+                    <td><%= image_tag @item.item_image.url,size: '200x200' %></td>
+                </tr>
+                <tr>
+                    <th scope="row"><%= Item.human_attribute_name(:dress_images) %></th>
+                    <td>
+                        <% @item.dress_images.each do |image|%>
+                            <%= image_tag image.url ,size: '200x200'%>
+                        <% end %>
+                    </td>
+                </tr>
+            </table>
+    </div>
+</div>

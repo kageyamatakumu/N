@@ -21,6 +21,12 @@
                         <span class="title"><%= current_user.brand.name %></span>
                     <% end %>
                 </li>
+                <li>
+                    <%= link_to admin_brand_items_path(current_user.brand) do %>
+                        <span class="icon"><i class="fas fa-tshirt"></i></span>
+                        <span class="title"><%= t '.item' %></span>
+                    <% end %>
+                </li>
                 <% end %>
                 <li>
                     <%= link_to root_path do%>

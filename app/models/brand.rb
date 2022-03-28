@@ -1,5 +1,6 @@
 class Brand < ApplicationRecord
   belongs_to :user
+  has_many :items, dependent: :destroy
 
   mount_uploader :brand_image, BrandImageUploader
   mount_uploader :instagram_image, InstagramUploader
