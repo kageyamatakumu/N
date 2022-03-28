@@ -1,0 +1,290 @@
+.form-index{
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 50px;
+
+    .info{
+        width: 180px;
+        text-align: center;
+        margin-left: 30%;
+        margin-top: 30px;
+        h2{
+            font-size: 20px;
+            border-bottom: 5px solid #dddcda ;
+        }
+    }
+
+    .form-area{
+        margin-top: 30px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        .flash{
+            color: #ed293e;
+            font-size: 13px;
+            margin-bottom: 15px;
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .form-group{
+            label{
+                font-size: 18px;
+            }
+            .mandatory{
+                color: khaki;
+            }
+            .form{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-bottom: 25px;
+                width: 400px;
+                height: 40px;
+                background-color: #dddcda;
+                border: none;
+            }
+            ::placeholder{
+                padding-left: 1%;
+            }
+        }
+        .reset_password{
+            a{
+                color: #dddcda;
+            }
+        }
+        .item{
+            text-align: center;
+            margin-top: 45px;
+            .button{
+                color:#dddcda;
+                border: #dddcda solid 3px;
+                border-radius: 10px;
+                background-color: #5A5858;
+                height: 64px;
+                width: 300px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .button:hover{
+                color: #5A5858;
+                border: #5A5858 solid 3px;
+                border-radius: 10px;
+                background-color: #dddcda;
+            }
+        }
+    }
+}
+
+// レスポンシブ
+@media (max-width: 1300px){
+    .form-index{
+        padding-left: 10%;
+        padding-right: 10%;
+
+        .info{
+            margin-left: 25%;
+            width: 160px;
+            h2{
+                font-size: 16px;
+            }
+        }
+
+        .form-area{
+            .form-group{
+                margin-left: auto;
+                margin-right: auto;
+                label{
+                    font-size: 16px;
+                }
+                .mandatory{
+                    font-size: 16px;
+                }
+                .form{
+                    height: 30px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .form-index{
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .info{
+            margin-left: 20%;
+            width: 150px;
+            h2{
+                font-size: 17px;
+                border-bottom: 3px solid #dddcda ;
+            }
+        }
+
+        .form-area{
+            .form-group{
+                label{
+                    font-size: 16px;
+                }
+                .mandatory{
+                    font-size: 16px;
+                }
+                .form{
+                    height: 30px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 760px){
+    .form-index{
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .info{
+            margin-left: 15%;
+            width: 140px;
+            h2{
+                font-size: 17px;
+                border-bottom: 3px solid #dddcda ;
+            }
+        }
+
+        .form-area{
+            .form-group{
+                label{
+                    font-size: 16px;
+                }
+                .mandatory{
+                    font-size: 16px;
+                }
+                .form{
+                    height: 30px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .form-index{
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .info{
+            margin-left: 10%;
+            h2{
+                font-size: 15px;
+                border-bottom: 3px solid #dddcda ;
+            }
+        }
+
+        .form-area{
+            width: 300px;
+            .form-group{
+                label{
+                    font-size: 13px;
+                }
+                .mandatory{
+                    font-size: 13px;
+                }
+                .form{
+                    height: 25px;
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 599px){
+    .form-index{
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .info{
+            margin-left: 10%;
+            width: 120px;
+            h2{
+                font-size: 13px;
+                border-bottom: 3px solid #dddcda ;
+            }
+        }
+
+        .form-area{
+            .form-group{
+                label{
+                    font-size: 10px;
+                }
+                .mandatory{
+                    font-size: 10px;
+                }
+                .form{
+                    height: 20px;
+                    width: 300px;
+                }
+            }
+            .item{
+                .button{
+                    height: 50px;
+                    width: 270px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px){
+    .form-index{
+        .info{
+            margin-left: 10%;
+            width: 120px;
+            h2{
+                font-size: 13px;
+                border-bottom: 3px solid #dddcda ;
+            }
+        }
+
+        .form-area{
+            .flash{
+                color: #ed293e;
+                font-size: 8px;
+                margin-bottom: 0px;
+                ul{
+                    li{
+                        list-style: none;
+                    }
+                }
+            }
+            .form-group{
+                label{
+                    font-size: 10px;
+                    margin-left: 28px;
+                }
+                .mandatory{
+                    font-size: 10px;
+                }
+                .form{
+                    height: 20px;
+                    width: 240px;
+                    margin-bottom: 10px;
+                }
+            }
+            .item{
+                .button{
+                    height: 40px;
+                    width: 240px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<%
+=begin%>
+ <%= render 'shared/notifications' %> 
+<%
+=end%>
+<div class="bifurcation">
+    <div class="gretel">
+        <% breadcrumb :sessions %>
+        <%= breadcrumbs separator: " > " , class: :logo %>
+    </div>
+    <div class="accout_button">
+        <div>
+        <%= button_to (t'defaults.login'), general_login_path, method: :get %>
+        </div>
+        <div>
+        <%= button_to (t'.brand_login'), admin_owner_login_path, method: :get %>
+        </div>
+    </div>
+</div>
