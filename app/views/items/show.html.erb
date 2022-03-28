@@ -1,0 +1,111 @@
+<% content_for(:title, @item.brand.name) %>
+
+<div class = 'item-show'>
+    <% breadcrumb :items_show, @item%>
+    <%= breadcrumbs separator: " > " , class: :logo %>
+    <div class = "item-show-wrap">
+        <div class = "item-show-image">
+            <%= image_tag @item.item_image.url, class: 'test-image' %>
+                <%
+=begin%>
+ <div class="like">
+                    <% if current_user %>
+                        <%= render 'like_button', item: @item ,liked: current_user.like?(@item) %>
+                    <% end %>
+                </div> 
+<%
+=end%>
+        </div>
+        <div class = "item-show-text">
+            <div class = 'item-brand-name'>
+                <div class="brand-name-flex">
+                    <%= image_tag @item.brand.brand_image.url, class: 'brand-image' %>
+                    <div class='brand_name'><%= @item.brand.name %></div>
+                </div>
+            </div>
+            <div class ='item-name'>
+                <%= @item.name %>
+            </div>
+            <% if @item.description? %>
+                <div class ='des'>
+                    <%= safe_join(@item.description.split("\n"),tag(:br))%>
+                </div>
+            <% else %>
+                <div class ='des'>
+                    <p><%= (t'defaults.unregistered') %></p>
+                </div>
+            <% end %>
+        </div>
+    </div>
+    <div class ='title'>
+        <h1><%= t '.cordinate' %></h1>
+    </div>
+    <% if @item.dress_images? %>
+        <div class ='item-dress'>
+            <% @item.dress_images.each do |image|%>
+                <%= image_tag image.url , class: 'pic'%>
+            <% end %>
+        </div>
+    <% else %>
+        <div class ='item-dress'>
+            <p><%= (t'defaults.unregistered') %></p>
+        </div>
+    <% end %>
+
+    <div class ='title'>
+        <h1><%= t '.what'%>
+            <span><%= @item.brand.name %></span>
+            <span><%= t'.question' %></span>
+        </h1>
+    </div>
+    <% if @item.brand.brand_description? %>
+        <div class = 'brand-des'>
+            <%= safe_join(@item.brand.brand_description.split("\n"),tag(:br)) %>
+        </div>
+    <% else %>
+        <div class = 'brand-des'>
+            <p><%= (t'defaults.unregistered') %></P>
+        </div>
+    <% end %>
+    <div class ='other'>
+        <h2><%= t '.other_en' %></h2>
+    </div>
+    <%= link_to  "https://www.instagram.com/#{@item.brand.instagram_user_name}/", target: :_blank, rel: "noopener noreferrer" do %>
+        <div class="spbody">
+            <div class="parts2 parts"></div>
+            <div class="parts3 parts"></div>
+            <div class="parts4 parts"></div>
+            <div class="partsbd">
+                <div class="partshd">
+                    <div class="partsspe"></div>
+                    <div class="partscam"></div>
+                </div>
+                <div class="partsvw">
+                    <%= image_tag @item.brand.instagram_image.url,class: 'iphone_image' %>
+                </div>
+                <div class="partsbtn"></div>
+            </div>
+        </div>
+    <% end %>
+    <div class = 'insta_icon'>
+        <p><%= t'.insta_icon' %></p>
+    </div>
+    <div class = 'about'>
+        <div class ='about-title'>
+            <%= image_tag 'NEMO_logo.jpg', size: "60x60"%>
+            <h3><%= t '.about_us' %></h3>
+        </div>
+        <div class = 'about-des'>
+            NEMOは優れたクリエイターが創造した<br>
+            新たなブランドを紹介するプラットフォームです
+        </div>
+        <div class = 'nemo-insta'>
+                    <div class = 'nemo-news'>
+                    <div class = 'nemo-info'>公式SNSにて<br>新着情報を配信</div>
+                    <%= link_to 'https://www.instagram.com/nemo.fashionsite/' do %>
+                        <i class="fa-brands fa-instagram"></i>
+                    <% end %>
+                </div>
+        </div>
+    </div>
+</div>

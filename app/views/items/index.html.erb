@@ -1,0 +1,12 @@
+<% content_for(:title) %>
+<div class = 'main_image'>
+    <%= image_tag 'NEMO_TOP.jpg' ,class:'image'%>
+    <%= image_tag 'Nemo(sp).jpg' ,class:'image_sp'%>
+<div>
+
+<div class = 'item-index'>
+    <div class ='title'>
+        <h1><%= t '.title' %></h1>
+    </div>
+    <%= render partial:'items', locals: {items: @items} %>
+</div>
