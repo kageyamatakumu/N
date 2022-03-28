@@ -14,6 +14,8 @@ Rails.application.routes.draw do
     root to: 'dashboards#index'
     get 'owner_login', to: 'owner_sessions#new'
     post 'owner_login', to: 'owner_sessions#create'
+    delete 'owner_logout', to: 'owner_sessions#destroy'
+    resources :brands, only: %i[show new create edit update]
   end
 
 end

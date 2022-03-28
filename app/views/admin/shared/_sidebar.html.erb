@@ -1,0 +1,38 @@
+
+<div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="title"><%= t'.nemo' %></span>
+                    </a>
+                </li>
+                <% if current_user.brand.blank? %>
+                <li>
+                    <%= link_to new_admin_brand_path do %>
+                        <span class="icon"><i class="fas fa-comment-alt"></i></span>
+                        <span class="title"><%= t '.register_brand' %></span>
+                    <% end %>
+                </li>
+                <% else %>
+                <li>
+                    <%= link_to admin_brand_path(current_user.brand) do %>
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title"><%= current_user.brand.name %></span>
+                    <% end %>
+                </li>
+                <% end %>
+                <li>
+                    <%= link_to root_path do%>
+                        <span class="icon"><i class="fa-solid fa-desktop"></i></span>
+                        <span class="title"><%= t '.top_button' %></span>
+                    <% end %>
+                </li>
+                <li>
+                    <%= button_to admin_owner_logout_path, method: "delete" do %>
+                        <span class="title"><%= (t'defaults.logout')%></span>
+                    <% end %>
+                </li>
+            </ul>
+        </div>
+    </div>
