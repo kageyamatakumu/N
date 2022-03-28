@@ -1,0 +1,14 @@
+<div class="center">
+  <h1><%= t'.title' %></h1>
+      <%= form_with url: admin_owner_login_path, local: true do |form|  %>
+        <div class="text_field">
+          <%= form.label :email, Owner.human_attribute_name(:email) %>
+          <%= form.email_field :email, class: 'form-control', placeholder: :email %>
+        </div>
+        <div class="text_field">
+          <%= form.label :password, Owner.human_attribute_name(:password) %>
+          <%= form.password_field :password, class: 'form-control', placeholder: :password %>
+        </div>
+        <%= form.submit (t'defaults.login') %>
+      <% end %>
+</div>
