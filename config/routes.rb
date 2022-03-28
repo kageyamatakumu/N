@@ -8,7 +8,14 @@ Rails.application.routes.draw do
   get 'general_login', to: 'general_sessions#new'
   post 'general_login', to: 'general_sessions#create'
   delete 'general_logout', to: 'general_sessions#destroy'
-  root to: 'homes#index'
+
+  # 商品一覧（トップページ）
+  root to: 'items#index'
+
+  # 一般ユーザー アクション用
+  resources :brands, only: %i[show] do
+    resources :items, only: %i[show], controller: 'items'
+  end
 
   namespace :admin do
     root to: 'dashboards#index'

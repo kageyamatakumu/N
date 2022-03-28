@@ -1,0 +1,135 @@
+
+   
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #5A5858;
+    display: flex;
+    flex-direction: column;
+    color: #dddcda;
+}
+
+.logo{
+    a{
+        color: khaki;
+    }
+}
+
+
+// 共通css
+.title{
+    margin-bottom:50px;
+    width: 30%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+        font-size: 24px;
+        border-bottom: 5px solid #dddcda ;
+    }
+}
+
+@media (max-width: 991px){
+    .title{
+        margin-bottom:30px;
+        h1{
+            font-size: 20px;
+            border-bottom: 3px solid #dddcda ;
+        }
+        h3{
+            margin-top: -12px;
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width:599px) {
+    .title{
+        margin-bottom:20px;
+        width: 50%;
+        h1{
+            font-size: 18px;
+            border-bottom: 2px solid #dddcda ;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .title{
+        margin-bottom:20px;
+        width: 50%;
+        h1{
+            font-size: 16px;
+            border-bottom: 2px solid #dddcda ;
+        }
+        h3{
+            font-size: 14px;
+        }
+    }
+}
+
+.gretel{
+    margin-top: 20px;
+}
+
+@media (max-width:599px) {
+    .gretel{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
+// お気に入りボタン
+.like_button{
+    padding-top: 20px;
+    background-color: #5A5858;
+    border: none;
+    .fa-heart{
+        font-size: 30px;
+    }
+    p{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:450px) {
+    .like_button{
+        padding-top: 20px;
+        padding-left: 0px;
+        background-color: #5A5858;
+        border: none;
+        .fa-heart{
+            font-size: 25px;
+        }
+        p{
+            margin-top: 0px;
+            font-size: 8px;
+        }
+    }
+}
+
+
+// flashメッセージ(notifications)
+.alert {
+    margin-top: 50px;
+    .success {
+      background-color: rgba(88, 127, 209, 0.973);
+      color: white;
+      text-align: center;
+    }
+    .danger {
+      background-color:  red;
+      color: white;
+      text-align: center;
+    }
+}
+
+@media (max-width:630px) {
+    .alert {
+        margin-top: 40px;
+    }
+}
