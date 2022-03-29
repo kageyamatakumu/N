@@ -1,4 +1,3 @@
-
 <div class="container">
         <div class="navigation">
             <ul>
@@ -35,7 +34,8 @@
                     <% end %>
                 </li>
                 <li>
-                    <%= button_to admin_owner_logout_path, method: "delete" do %>
+                    <%= link_to admin_owner_logout_path, method: "delete" do %>
+                        <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
                         <span class="title"><%= (t'defaults.logout')%></span>
                     <% end %>
                 </li>
