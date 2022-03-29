@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 
   resources :owners, only: %i[new create]
   resources :generals, only: %i[new create]
@@ -13,6 +14,9 @@ Rails.application.routes.draw do
   get 'acounts', to: 'accounts#index'
   # ログイン分岐ページ
   get 'sessions', to: 'sessions#index'
+
+  # パスワードリセット
+  resources :password_resets, only: %i[new create edit update]
 
   # 商品一覧（トップページ）
   root to: 'items#index'

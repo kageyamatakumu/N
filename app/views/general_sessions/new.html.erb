@@ -1,5 +1,22 @@
+<% content_for(:title, t('.sub_title')) %>
+
+<div class = "form-index">
+    <div class = "gretel">
+        <% breadcrumb :general_new %>
+        <%= breadcrumbs separator: " > " , class: :logo %>
+    </div>
+    <div class ='title'>
+        <h1><%= t '.title' %></h1>
+        <h3><%= t '.sub_title' %></h3>
+    </div>
+
+    <div class = 'info'>
+        <h2><%= t'.info' %><h3>
+    </div>
+
     <div class = 'form-area'>
         <%= form_with url: general_login_path do |form| %>
+
             <div class ='form-group'>
                 <%= form.label :email, General.human_attribute_name(:email) %>
                 <%= form.email_field :email, class: 'form'  %>
@@ -8,8 +25,12 @@
                 <%= form.label :password,  General.human_attribute_name(:password)%>
                 <%= form.password_field :password, class: 'form'  %>
             </div>
+            <div class="reset_password">
+                <%= link_to (t'.reset_password'),  new_password_reset_path %>
+            </div>
             <div class = 'item'>
                 <%= form.submit (t 'defaults.login'), class: 'button' %>
             </div>
         <% end %>
     </div>
+</div>

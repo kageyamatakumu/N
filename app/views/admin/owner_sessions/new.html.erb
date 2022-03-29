@@ -9,6 +9,9 @@
           <%= form.label :password, Owner.human_attribute_name(:password) %>
           <%= form.password_field :password, class: 'form-control', placeholder: :password %>
         </div>
+        <div class="reset_password">
+          <%= link_to (t'.reset_password'),  new_password_reset_path %>
+        </div>
         <%= form.submit (t'defaults.login') %>
       <% end %>
 </div>

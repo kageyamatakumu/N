@@ -1,4 +1,22 @@
+<% content_for(:title, t('.sub_title')) %>
+
+<div class = "form-index">
+  <div class = "gretel">
+    <% breadcrumb :general_new %>
+    <%= breadcrumbs separator: " > " , class: :logo %>
+  </div>
+  <div class ='title'>
+      <h1><%= t '.title' %></h1>
+      <h3><%= t '.sub_title' %></h3>
+  </div>
+
+  <div class = 'info'>
+      <h2><%= t'.info' %><h3>
+  </div>
+
+  <div class = 'form-area'>
     <%= form_with model: @general do |form| %>
+      <%= render 'shared/error_messages', object: form.object %>
       <div class ='form-group'>
         <%= form.label :name %>
         <%= form.text_field :name, class: 'form', placeholder: "例: nemo" %>
@@ -19,3 +37,5 @@
         <%= form.submit (t 'defaults.register'), class: 'button' %>
       </div>
     <% end %>
+  </div>
+</div>
