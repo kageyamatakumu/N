@@ -35,4 +35,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'terms', to: 'terms#index'
+  get 'privacy', to: 'privacies#index'
+  get 'contact', to: "contacts#index"
+
 end
