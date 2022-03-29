@@ -21,17 +21,17 @@ ja:
         other_ja: '他のアイテムはこちら'
         about_us: 'About Us'
         insta_icon: '※iPhoneをクリックでInsatagramへ'
-  owner_informations:
+  owners:
     new:
       title: 'Join'
       sub_title: 'オーナー様新規登録'
       info: '情報入力'
-  general_user_informations:
+  generals:
     new:
       title: 'Join'
       sub_title: '新規登録'
       info: '情報入力'
-  general_user_information_sessions:
+  general_sessions:
     new:
       title: 'Login'
       sub_title: 'ログイン'
@@ -113,7 +113,7 @@ ja:
         code_picture: 'コーディネート写真'
       show:
         title: 'アイテム情報'
-    owner_information_sessions:
+    owner_sessions:
       new:
         title: 'オーナー様ログイン画面'
         reset_password: 'パスワードを忘れた方（再設定）'

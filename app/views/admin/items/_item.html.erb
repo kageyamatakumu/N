@@ -15,6 +15,6 @@
     <%= button_to t('defaults.edit'), edit_admin_brand_item_path(item.brand,item), method: :get, class: 'btn btn-success' %>
   </td>
   <td>
-    <%= button_to t('defaults.delete'), admin_brand_item_path(item.brand, item), method: :delete, class: 'btn btn-danger' %>
+    <%= button_to t('defaults.delete'), admin_brand_item_path(item.brand, item), method: :delete, data: { confirm: "【確認】アイテムを削除してもよろしいですか？" },  class: 'btn btn-danger' %>
   </td>
 </tr>

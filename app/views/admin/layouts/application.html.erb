@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta lang='ja'>
   <meta name="robots" content="noindex, nofollow">
-  <title>管理画面</title>
+  <title><%= page_admin_title(yield(:title)) %></title>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag 'admin', media: 'all',  media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'admin', 'data-turbolinks-track': 'reload' %>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
