@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   # 商品一覧（トップページ）
   root to: 'items#index'
+  get 'items/search'
 
   get 'items/likes', to: 'items#likes'
   resources :likes, only: %i[create destroy]

@@ -9,11 +9,7 @@
                 <ul class = "nav-list">
                         <li class= "item">
                             <% if current_page?(root_path)%>
-                                <%
-=begin%>
- <%= render 'items/search', url: root_path %> 
-<%
-=end%>
+                                <%= render 'items/search', url: root_path %>
                             <% end %>
                         </li>
                     <% if current_user %>
