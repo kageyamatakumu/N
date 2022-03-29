@@ -1,0 +1,11 @@
+<div class="topbar">
+  <div class="toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  <!-- userimage -->
+  <% if current_user.brand %>
+    <div class="user">
+      <%= image_tag current_user.brand.brand_image.url %>
+    </div>
+  <% end %>
+</div>

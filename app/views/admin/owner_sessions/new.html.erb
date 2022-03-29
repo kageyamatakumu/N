@@ -1,6 +1,7 @@
 <div class="center">
   <h1><%= t'.title' %></h1>
       <%= form_with url: admin_owner_login_path, local: true do |form|  %>
+        <%= render "shared/flash_message" %>
         <div class="text_field">
           <%= form.label :email, Owner.human_attribute_name(:email) %>
           <%= form.email_field :email, class: 'form-control', placeholder: :email %>
