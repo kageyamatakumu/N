@@ -2,17 +2,17 @@ crumb :root do
   link "Home", root_path
 end
 
-crumb :owner_informations_new do
-  link "新規会員登録（ブランドオーナー）", new_owner_information_path
+crumb :owner_new do
+  link "新規会員登録（ブランドオーナー）", new_owner_path
   parent :acounts
 end
 
-crumb :general_user_informations_new do
-  link " 登録画面", new_general_user_information_path
+crumb :general_new do
+  link " 登録画面", new_general_path
   parent :acounts
 end
 
-crumb :general_user_informations_sessions_new do
+crumb :general_sessions_new do
   link " ログイン画面", general_login_path
   parent :sessions
 end
