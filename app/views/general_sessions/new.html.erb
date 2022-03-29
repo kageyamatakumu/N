@@ -16,7 +16,7 @@
 
     <div class = 'form-area'>
         <%= form_with url: general_login_path do |form| %>
-
+            <%= render "shared/flash_message" %>
             <div class ='form-group'>
                 <%= form.label :email, General.human_attribute_name(:email) %>
                 <%= form.email_field :email, class: 'form'  %>
