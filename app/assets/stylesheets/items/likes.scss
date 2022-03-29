@@ -1,0 +1,135 @@
+.site-width{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 50px;
+
+    .item{
+        .item_ul{
+            column-count: 3;
+            padding: 0px;
+            list-style: none;
+
+            .card{
+                break-inside: avoid;
+                margin-bottom: 40px;
+
+                .top-images{
+                    display: block;
+                    width:100%;
+                    height: auto;
+                    border-radius: 17px;
+                }
+
+                a {
+                    text-decoration:none;
+
+                    .flex{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        padding: 10px;
+
+                        .brand-image{
+                            width:45px;
+                            height: 45px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+
+                        p{
+                            text-align: center;
+                            padding-left: 10px;
+                            font-size:13px;
+                            color: #ffffff;
+                        }
+
+                        p:nth-last-child(1){
+                            white-space:nowrap;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .no-item{
+        text-align: center;
+    }
+}
+
+
+// レスポンシブ(iphone)
+@media (max-width: 991px){
+    .site-width{
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .item{
+            .item_ul{
+                .card{
+                    margin-bottom: 30px;
+
+                    a{
+                        .flex{
+                            padding: 5px;
+
+                            .likes_images{
+                                width: 30px;
+                                height: 30px;
+                            }
+
+                            p{
+                                padding-left: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .site-width{
+        .item{
+            .item_ul{
+                column-count: 2;
+            }
+        }
+    }
+}
+
+@media (max-width:599px) {
+    .site-width{
+        .item{
+            .item_ul{
+                column-count: 2;
+
+                .card{
+                    margin-bottom: 20px;
+
+                    a{
+                        .flex{
+                            padding-top: 3px;
+
+                            .brand-image{
+                                width:20px;
+                                height: 20px;
+                                object-fit: cover;
+                            }
+
+                            p{
+                                font-size:10px;
+                                padding-left: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .no-item{
+                font-size:10px;
+            }
+        }
+    }
+}

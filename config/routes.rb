@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   # 商品一覧（トップページ）
   root to: 'items#index'
 
+  get 'items/likes', to: 'items#likes'
+  resources :likes, only: %i[create destroy]
+
   # 一般ユーザー アクション用
   resources :brands, only: %i[show] do
     resources :items, only: %i[show], controller: 'items'

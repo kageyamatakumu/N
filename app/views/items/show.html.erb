@@ -6,15 +6,11 @@
     <div class = "item-show-wrap">
         <div class = "item-show-image">
             <%= image_tag @item.item_image.url, class: 'test-image' %>
-                <%
-=begin%>
- <div class="like">
-                    <% if current_user %>
-                        <%= render 'like_button', item: @item ,liked: current_user.like?(@item) %>
-                    <% end %>
-                </div> 
-<%
-=end%>
+            <div class="like">
+                <% if current_user %>
+                    <%= render 'like_button', item: @item ,liked: current_user.like?(@item) %>
+                <% end %>
+            </div>
         </div>
         <div class = "item-show-text">
             <div class = 'item-brand-name'>
