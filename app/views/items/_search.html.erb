@@ -2,7 +2,9 @@
   <div class="search">
     <%= f.search_field :name_or_brand_name_cont, class: 'search-form', placeholder: "ブランド アイテム" %>
     <div class="search_button">
-      <%= f.submit class: "btn" %>
+      <%= f.button :type => "submit", style: 'border-style: none;' do %>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      <% end %>
     </div>
   </div>
 <% end %>
