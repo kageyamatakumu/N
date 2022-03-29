@@ -1,8 +1,4 @@
-<%
-=begin%>
- <%= render 'shared/notifications' %> 
-<%
-=end%>
+<%= render 'shared/notifications' %> 
 <div class="bifurcation">
     <div class="gretel">
         <% breadcrumb :sessions %>
@@ -10,10 +6,10 @@
     </div>
     <div class="accout_button">
         <div>
-        <%= button_to (t'defaults.login'), general_login_path, method: :get %>
+        <%= button_to (t'defaults.login'), general_login_path, method: :get, class:'button' %>
         </div>
         <div>
-        <%= button_to (t'.brand_login'), admin_owner_login_path, method: :get %>
+        <%= button_to (t'.brand_login'), admin_owner_login_path, method: :get, class:'button' %>
         </div>
     </div>
 </div>

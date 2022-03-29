@@ -18,12 +18,12 @@ ja:
         item_image: 'メイン写真'
         dress_images: 'コーディネート写真'
         created_at: '投稿日'
-      general_user_information:
+      general:
         name: 'ユーザーネーム'
         email: 'メールアドレス'
         passsword: 'Password'
         password_confirmation: 'Password 再入力'
-      owner_information:
+      owner:
         name: 'オーナーネーム'
         email: 'メールアドレス'
         passsword: 'Password'
