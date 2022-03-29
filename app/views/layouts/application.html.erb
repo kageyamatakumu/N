@@ -13,6 +13,8 @@
   <body>
     <%= render 'shared/header' %>
     <%= yield %>
-    <%= render 'shared/footer' %>
+    <% unless current_page?(items_likes_path)%>
+      <%= render 'shared/footer' %>
+    <% end %>
   </body>
 </html>

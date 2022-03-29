@@ -17,19 +17,15 @@
                             <% end %>
                         </li>
                     <% if current_user %>
-                        <%
-=begin%>
- <li class = "item">
+                        <li class = "item">
                             <%= link_to (t '.likes'), items_likes_path %>
-                        </li> 
-<%
-=end%>
-                        <% if current_user.type == 'OwnerInformation' %>
+                        </li>
+                        <% if current_user.type == 'Owner' %>
                             <li class = "item">
                                 <%= link_to (t'.admin'), admin_root_path %>
                             </li>
                         <% end %>
-                        <% if current_user.type == 'GeneralUserInformation' %>
+                        <% if current_user.type == 'General' %>
                             <li class = "item">
                                 <%= button_to (t'defaults.logout'), general_logout_path, method: "delete" %>
                             </li>
