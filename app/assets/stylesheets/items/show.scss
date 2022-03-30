@@ -113,7 +113,7 @@
 .spbody .partsbd .partsspe,.spbody .partsbd .partscam{height: 10px; background: #5A5858; border-radius: 10px; display: inline-block; position: absolute; top: 0; left:50%;}
 .spbody .partsbd .partsspe{width: 10px;margin-left:-36px;}
 .spbody .partsbd .partscam{width: 50px;margin-left:-23px}
-.spbody .partsvw{height: 300px; border:1px solid #000}
+.spbody .partsvw{height: 320px; border:1px solid #000}
 .spbody .partsbtn{width: 30px; height: 30px; border-radius: 60px; background: #5A5858; margin: 15px auto;}
 .spbody .parts{position: absolute; background: #ccc; top: 50%; left: 50%;}
 .spbody .parts2{width: 4px; height: 20px; margin: -170px 0 0 -120px;}
@@ -122,8 +122,8 @@
 
 .iphone_image{
     width: 187px;
-    height: 300px;
-    object-fit: contain;
+    height: 320px;
+    object-fit: cover;
 }
 
 .insta_icon{
