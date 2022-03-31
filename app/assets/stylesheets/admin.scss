@@ -254,6 +254,7 @@ body{
     text-decoration: none;
     color: var(--black1);
     border-radius: 6px;
+    -webkit-appearance: none;
 
 }
 .btn:hover{
@@ -261,6 +262,7 @@ body{
     background: var(--grey);
     color: var(--bulue);
     border: 2px solid var(--bulue);
+    -webkit-appearance: none;
 }
 .details table{
     width: 100%;
