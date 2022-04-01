@@ -5,37 +5,21 @@
             <h2><%= t '.nemo' %><h2>
         </div>
         <div class = "header-nav">
-            <nav class = "nav-wrap">
-                <ul class = "nav-list">
-                        <li class= "item">
-                            <% if current_page?(root_path)%>
-                                <%= render 'items/search', url: root_path %>
-                            <% end %>
-                        </li>
-                    <% if current_user %>
-                        <li class = "item">
-                            <%= link_to (t '.likes'), items_likes_path %>
-                        </li>
-                        <% if current_user.type == 'Owner' %>
-                            <li class = "item">
-                                <%= link_to (t'.admin'), admin_root_path %>
-                            </li>
-                        <% end %>
-                        <% if current_user.type == 'General' %>
-                            <li class = "item">
-                                <%= link_to (t'defaults.logout'), general_logout_path, method: "delete" %>
-                            </li>
-                        <% end %>
-                    <% else %>
-                        <li class = "item">
-                            <%= link_to (t '.login'), sessions_path %>
-                        </li>
-                        <li class = 'item'>
-                            <%= link_to (t '.register'), acounts_path %>
-                        </li>
+            <div class="item">
+                <% if current_page?(root_path)%>
+                    <%= render 'items/search', url: root_path %>
+                <% end %>
+            </div>
+            <% if logged_in? %>
+                <div class="item">
+                    <%= link_to items_likes_path do %>
+                        <i class="fa-regular fa-heart"></i>
                     <% end %>
-                </ul>
-            </nav>
+                </div>
+            <% end %>
+            <div class="item">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </div>
 </header>

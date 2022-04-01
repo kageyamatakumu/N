@@ -1,0 +1,100 @@
+.menu{
+    margin-top: 50px;
+    z-index: 5;
+    position: fixed;
+    right: -40%;
+    width: 25%;
+    height: 100vh;
+    margin-left: auto;
+    /* メニューを縦に */
+    display: flex;
+    flex-direction: column;
+    color: #dddcda;
+    background-color: #000;
+    transition: 1s;
+
+    .menu-list{
+        list-style: none;
+        width: 100%;
+        margin-top: 50px;
+
+        // ログイン状態
+        a{
+            color: #dddcda;
+            text-decoration: none;
+        }
+
+        .menu-title{
+            font-size: 20px;
+        }
+
+        .menu-content{
+            list-style: none;
+            padding-top: 10px;
+            a{
+                color: #dddcda;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.menu.icon{
+    right: 0;
+}
+
+@media (max-width: 1100px){
+    .menu{
+        width: 30%;
+        right: -50%;
+    }
+}
+
+@media (max-width: 850px){
+    .menu{
+        width: 35%;
+        right: -55%;
+    }
+}
+
+@media (max-width: 710px){
+    .menu{
+        width: 40%;
+        right: -60%;
+    }
+}
+
+@media (max-width: 610px){
+    .menu{
+        width: 50%;
+        right: -65%;
+        .menu-list{
+            .menu-title{
+                font-size: 16px;
+            }
+            .menu-content{
+                a{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .menu{
+        width: 60%;
+        right: -75%;
+        margin-top: 30px;
+            .menu-list{
+                margin-top: 40px;
+            .menu-title{
+                font-size: 13px;
+            }
+            .menu-content{
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
