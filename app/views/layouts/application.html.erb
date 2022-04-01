@@ -12,6 +12,7 @@
 
   <body>
     <%= render 'shared/header' %>
+    <%= render 'shared/menubar' %>
     <%= yield %>
     <% unless current_page?(items_likes_path)%>
       <%= render 'shared/footer' %>

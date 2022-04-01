@@ -6,6 +6,8 @@
 
 @import './shared/footer';
 
+@import './shared/menubar';
+
 @import './items/top';
 @import './items/show';
 @import './items/likes';
@@ -13,8 +15,6 @@
 @import './general/general_new';
 
 @import './privacy/privacy';
-
-@import './bifurcation/bifurcation';
 
 // /*
 //  * This is a manifest file that'll be compiled into application.css, which will include all the files

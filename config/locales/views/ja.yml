@@ -77,6 +77,13 @@ ja:
       privacy: 'プライバシーポリシー'
       contact: 'お問い合わせ'
       copyright: 'Copyright (c) 2022 Nemo'
+    menubar:
+      first: 'はじめての方'
+      login: 'ログイン'
+      admin: '管理画面'
+      new_account: '新規会員登録'
+      new_brand_account: '新規ブランド登録'
+      brand_login: 'ログイン(ブランドオーナー)'
 
 
   admin:

@@ -10,11 +10,6 @@ Rails.application.routes.draw do
   post 'general_login', to: 'general_sessions#create'
   delete 'general_logout', to: 'general_sessions#destroy'
 
-  # アカウント作成分岐ページ
-  get 'acounts', to: 'accounts#index'
-  # ログイン分岐ページ
-  get 'sessions', to: 'sessions#index'
-
   # パスワードリセット
   resources :password_resets, only: %i[new create edit update]
 

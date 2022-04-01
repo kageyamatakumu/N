@@ -4,17 +4,18 @@ end
 
 crumb :owner_new do
   link "新規会員登録（ブランドオーナー）", new_owner_path
-  parent :acounts
+  parent :root
 end
 
+
 crumb :general_new do
-  link " 登録画面", new_general_path
-  parent :acounts
+  link " 新規会員登録", new_general_path
+  parent :root
 end
 
 crumb :general_sessions_new do
-  link " ログイン画面", general_login_path
-  parent :sessions
+  link " ログイン", general_login_path
+  parent :root
 end
 
 crumb :items_show do |item|
@@ -24,16 +25,6 @@ end
 
 crumb :items_likes do
   link " お気に入り", items_likes_path
-  parent :root
-end
-
-crumb :acounts do
-  link "新規会員登録", acounts_path
-  parent :root
-end
-
-crumb :sessions do
-  link "ログイン", sessions_path
   parent :root
 end
 
