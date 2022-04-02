@@ -71,8 +71,8 @@ Rails.application.configure do
     address: 'smtp.gmail.com',
     domain: 'gmail.com',
     port: 587,
-    user_name: Settings.name,
-    password: Settings.password,
+    user_name: 'nemo.fashionsite2022@gmail.com',
+    password: 'lcdaunkygqqkxuyn',
     authentication: :login
   }
 
