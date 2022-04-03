@@ -1,6 +1,5 @@
 default_url_options:
-  protocol: 'https'
-  host: 'nemo2022.herokuapp.com'
+  host: 'https://nemo2022.herokuapp.com'
 
 names: 'nemo.fashionsite2022@gmail.com'
 passwords: 'xzddmfnrargdypfw'
