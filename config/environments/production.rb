@@ -69,11 +69,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
-    domain: 'heroku.com',
+    domain: 'gmail.com',
     port: 587,
     user_name: Settings.names,
     password: Settings.passwords,
-    authentication: 'plain'
+    authentication: :login
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
