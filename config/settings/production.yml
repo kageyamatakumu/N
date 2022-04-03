@@ -3,3 +3,6 @@ default_url_options:
 
 names: 'nemo.fashionsite2022@gmail.com'
 passwords: 'xzddmfnrargdypfw'
+
+AWS_ACCESS_KEY_ID: 'AKIAYIG3BO2PV73QK7SI'
+AWS_SECRET_ACCESS_KEY: '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'
