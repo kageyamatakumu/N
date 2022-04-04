@@ -1,8 +1,11 @@
 class BrandImageUploader < CarrierWave::Uploader::Base
-  if Rails.env.production?
-    storage :fog # 本番環境のみ
+
+  if Rails.env.development?
+    storage :file
+  elsif Rails.env.test?
+    storage :file
   else
-    storage :file # 本番環境以外
+    storage :fog
   end
 
   #アップロードしたファイルの保存先を指定する。
