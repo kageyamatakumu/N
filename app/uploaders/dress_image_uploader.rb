@@ -1,12 +1,8 @@
 class DressImageUploader < CarrierWave::Uploader::Base
 
-  if Rails.env.development?
-    storage :file
-  elsif Rails.env.test?
-    storage :file
-  else
+
     storage :fog
-  end
+
 
   #アップロードしたファイルの保存先を指定する。
   def store_dir
