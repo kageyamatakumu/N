@@ -6,7 +6,6 @@ CarrierWave.configure do |config|
     config.storage :fog
     config.fog_provider = 'fog/aws'
     config.fog_directory  = 'nemo.brands' # 作成したバケット名を記述
-    config.fog_public = false
     config.fog_credentials = {
       provider: 'AWS',
       aws_access_key_id: Settings.AWS_ACCESS_KEY_ID, # 環境変数
