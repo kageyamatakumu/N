@@ -1,7 +1,7 @@
 class ItemImageUploader < CarrierWave::Uploader::Base
 
 
-    storage :fog
+    # storage :file
 
 
   #アップロードしたファイルの保存先を指定する。
