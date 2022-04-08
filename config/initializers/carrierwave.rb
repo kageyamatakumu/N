@@ -10,8 +10,8 @@ CarrierWave.configure do |config|
       provider: 'AWS',
       # aws_access_key_id: Settings.AWS_ACCESS_KEY_ID, # 環境変数
       # aws_secret_access_key: Settings.AWS_SECRET_ACCESS_KEY, # 環境変数
-      aws_access_key_id: 'AKIA2XCTYBW4WS6A55HL',
-      aws_secret_access_key: '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',
+      aws_access_key_id: 'AKIA2XCTYBW4YRPAH6EC',
+      aws_secret_access_key: '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',
       region: 'ap-northeast-1',   # アジアパシフィック(東京)を選択した場合
     }
 end
