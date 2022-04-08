@@ -1,5 +1,10 @@
 class InstagramUploader < CarrierWave::Uploader::Base
 
+  if Rails.env.production?
+    storage :fog # 本番環境のみ
+  else
+    storage :file # 本番環境以外
+  end
 
    
 

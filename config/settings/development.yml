@@ -1,0 +1,6 @@
+default_url_options:
+  host: 'localhost:3000'
+
+
+AWS_ACCESS_KEY_ID: 'AKIA2XCTYBW47NOI7JU6'
+AWS_SECRET_ACCESS_KEY: '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'
