@@ -1,8 +1,6 @@
 class DressImageUploader < CarrierWave::Uploader::Base
 
 
-    # storage :file
-
   if Rails.env.production?
     storage :fog # 本番環境のみ
   else
