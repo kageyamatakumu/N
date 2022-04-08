@@ -1,6 +1,9 @@
 class Item < ApplicationRecord
   belongs_to :brand
 
+  has_many :likes, dependent: :destroy
+  has_many :like_items, through: :likes, source: :item
+
   mount_uploader :item_image, ItemImageUploader
   mount_uploaders :dress_images, DressImageUploader
 
