@@ -6,8 +6,6 @@ class InstagramUploader < CarrierWave::Uploader::Base
     storage :file # 本番環境以外
   end
 
-   
-
   #アップロードしたファイルの保存先を指定する。
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
