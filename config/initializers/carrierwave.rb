@@ -8,8 +8,8 @@ CarrierWave.configure do |config|
     config.fog_directory  = 'daison'
     config.fog_credentials = {
       provider: 'AWS',
-      aws_access_key_id: Settings.AWS_ACCESS_KEY_ID, # 環境変数
-      aws_secret_access_key: Settings.AWS_SECRET_ACCESS_KEY, # 環境変数
+      aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'], # 環境変数
+      aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'], # 環境変数
       region: 'ap-northeast-1',   # アジアパシフィック(東京)を選択した場合
       # path_style: true
     }
