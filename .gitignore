@@ -47,6 +47,7 @@ vendor/bundle
 /public/uploads
 
 config/settings/development.yml
+config/settings/production.yml
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
