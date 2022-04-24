@@ -1,11 +1,11 @@
 document.addEventListener('turbolinks:load', () => {
-    // MenuToggle
-    let toggle = document.querySelector('.toggle');
-    let navigation = document.querySelector('.navigation');
-    let main = document.querySelector('.main')
+  // MenuToggle
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main')
 
-    toggle.onclick = function(){
-        navigation.classList.toggle('active')
-        main.classList.toggle('active')
-    }
+  toggle.onclick = function(){
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
 })
