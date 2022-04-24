@@ -1,28 +1,28 @@
 a{
-    color: khaki;
+  color: khaki;
 }
 
 .contact{
-    text-align: center;
-    padding-top: 50px;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .contact-item{
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .fa-brands{
-    font-size: 50px;
+  font-size: 50px;
 }
 
 @media (max-width:599px) {
-    .privacy_title{
-        font-size: 16px;
-    }
-    .privacy{
-        font-size: 10px;
-    }
-    a{
-        font-size: 10px;
-    }
+  .privacy_title{
+    font-size: 16px;
+  }
+  .privacy{
+    font-size: 10px;
+  }
+  a{
+    font-size: 10px;
+  }
 }
