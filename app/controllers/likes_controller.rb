@@ -12,4 +12,5 @@ class LikesController < ApplicationController
     # ajax(非同期処理に移行)
     # redirect_back(fallback_location: brand_item_path(item.brand, item))
   end
+
 end
