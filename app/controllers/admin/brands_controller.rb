@@ -39,7 +39,7 @@ class Admin::BrandsController < Admin::BaseController
   end
 
   def verify_access
-    redirect_to sessions_path, danger: 'アクセス許可できません' unless current_user.my_object?(@brand)
+    redirect_to root_path, danger: 'アクセス許可できません' unless current_user.my_object?(@brand)
   end
 
 end
