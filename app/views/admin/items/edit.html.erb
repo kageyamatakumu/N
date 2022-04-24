@@ -1,79 +1,77 @@
 <% content_for(:title, t('.title')) %>
 <div class="details_form">
-    <div class="recentOrders">
-        <div class="cardHeader">
-            <h1><%= t '.title' %></h1>
-        </div>
-        <%= form_with model:[@brand, @item], url: admin_brand_item_path(@brand, @item) do |form| %>
-            <%= render 'shared/error_messages', object: form.object %>
-            <div class="form-group">
-                <%= form.label :name %>
-                <%= form.text_field :name, class: 'form-control' %>
-            </div>
-            <div class="form-group">
-                <%= form.label :description %>
-                <%= form.text_area :description, class: 'form-control', rows: 10, id: 'count' %>
-                <p><span id="inputCounter">0</span>文字(150字まで)</p>
-            </div>
-            <div class="form-group">
-                <%= form.label :item_image %>
-                <%= form.file_field :item_image , id: 'image',  class: 'form-control',accept: 'image/*' %>
-                <%= form.hidden_field :item_image_cache %>
-            </div>
-            <div class="form-group">
-                <%= form.label :dress_images %>
-                <%= form.file_field :dress_images, multiple: true , id: 'dress-image', class: 'form-control', accept: 'image/*' %>
-            </div>
-            <div class="form-group">
-                <%= form.label :dress_images %>
-                <%= form.file_field :dress_images, multiple: true , id: 'dress-image2', class: 'form-control', accept: 'image/*' %>
-            </div>
-            <div class="form-group">
-                <%= form.label :dress_images %>
-                <%= form.file_field :dress_images, multiple: true , id: 'dress-image3', class: 'form-control', accept: 'image/*' %>
-            </div>
-            <p><%= t'.caution'%></p>
-            <div>
-                <%= form.submit (t '.register'), class:"btn-submit" %>
-            </div>
-        <% end %>
+  <div class="recentOrders">
+    <div class="cardHeader">
+      <h1><%= t '.title' %></h1>
     </div>
+    <%= form_with model:[@brand, @item], url: admin_brand_item_path(@brand, @item) do |form| %>
+      <%= render 'shared/error_messages', object: form.object %>
+      <div class="form-group">
+        <%= form.label :name %>
+        <%= form.text_field :name, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= form.label :description %>
+        <%= form.text_area :description, class: 'form-control', rows: 10, id: 'count' %>
+        <p><span id="inputCounter">0</span>文字(150字まで)</p>
+      </div>
+      <div class="form-group">
+        <%= form.label :item_image %>
+        <%= form.file_field :item_image , id: 'image',  class: 'form-control',accept: 'image/*' %>
+        <%= form.hidden_field :item_image_cache %>
+      </div>
+      <div class="form-group">
+        <%= form.label :dress_images %>
+        <%= form.file_field :dress_images, multiple: true , id: 'dress-image', class: 'form-control', accept: 'image/*' %>
+      </div>
+      <div class="form-group">
+        <%= form.label :dress_images %>
+        <%= form.file_field :dress_images, multiple: true , id: 'dress-image2', class: 'form-control', accept: 'image/*' %>
+      </div>
+      <div class="form-group">
+        <%= form.label :dress_images %>
+        <%= form.file_field :dress_images, multiple: true , id: 'dress-image3', class: 'form-control', accept: 'image/*' %>
+      </div>
+      <p><%= t'.caution'%></p>
+      <div>
+        <%= form.submit (t '.register'), class:"btn-submit" %>
+      </div>
+    <% end %>
+  </div>
 
-    <%# 写真を確認できる画面 %>
-    <div class="recentCustomers">
-        <div class="cardHeader">
-            <h1><%= t'.main_picture' %></h1>
-        </div>
-        <div class="preview">
-            <div class="editHeader"><%= t'.after_edit' %></div>
-                <div>
-                    <%=image_tag  'no_image.png', id:"main-preview", size: '100x100' %>
-                </div>
-                <div>
-                    <div class="editHeader"><%= t'.before_edit' %></div>
-                        <%if @item.item_image.present? %>
-                            <%= image_tag @item.item_image.url, size: '100x100' %>
-                        <% end %>
-                    </div>
-                    <div class="cardHeader">
-                        <h1><%= t'.code_picture' %></h1>
-                    </div>
-                    <div class="dress-preview">
-                        <div class="editHeader"><%= t'.after_edit' %></div>
-                        <%=image_tag  'no_image.png', id:"dress-preview", size: '100x100' %>
-                        <%=image_tag  'no_image.png', id:"dress-preview2", size: '100x100'%>
-                        <%=image_tag  'no_image.png', id:"dress-preview3", size: '100x100' %>
-                    </div>
-                    <div>
-                        <div class="editHeader"><%= t'.before_edit' %></div>
-                        <%if @item.dress_images.present? %>
-                            <% @item.dress_images.each do |item| %>
-                                <%= image_tag item.url, size: '100x100' %>
-                            <% end %>
-                        <% end %>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <%# 写真を確認できる画面 %>
+  <div class="recentCustomers">
+    <div class="cardHeader">
+      <h1><%= t'.main_picture' %></h1>
     </div>
+    <div class="preview">
+      <div class="editHeader"><%= t'.after_edit' %></div>
+      <div>
+        <%=image_tag  'no_image.png', id:"main-preview", size: '100x100' %>
+      </div>
+      <div>
+        <div class="editHeader"><%= t'.before_edit' %></div>
+        <%if @item.item_image.present? %>
+            <%= image_tag @item.item_image.url, size: '100x100' %>
+        <% end %>
+      </div>
+      <div class="cardHeader">
+        <h1><%= t'.code_picture' %></h1>
+      </div>
+      <div class="dress-preview">
+        <div class="editHeader"><%= t'.after_edit' %></div>
+        <%=image_tag  'no_image.png', id:"dress-preview", size: '100x100' %>
+        <%=image_tag  'no_image.png', id:"dress-preview2", size: '100x100'%>
+        <%=image_tag  'no_image.png', id:"dress-preview3", size: '100x100' %>
+      </div>
+      <div>
+        <div class="editHeader"><%= t'.before_edit' %></div>
+        <%if @item.dress_images.present? %>
+            <% @item.dress_images.each do |item| %>
+              <%= image_tag item.url, size: '100x100' %>
+            <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>

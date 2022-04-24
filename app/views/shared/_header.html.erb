@@ -1,25 +1,25 @@
 <header class = "header">
-    <div class = "header-fixed">
-        <div class = "header-log">
-            <%= image_tag  'NEMO_logo.jpg', class: 'nemo_image' %>
-            <h2><%= t '.nemo' %><h2>
-        </div>
-        <div class = "header-nav">
-            <div class="item">
-                <% if current_page?(root_path)%>
-                    <%= render 'items/search', url: root_path %>
-                <% end %>
-            </div>
-            <% if logged_in? %>
-                <div class="item">
-                    <%= link_to items_likes_path do %>
-                        <i class="fa-regular fa-heart"></i>
-                    <% end %>
-                </div>
-            <% end %>
-            <div class="item">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+  <div class = "header-fixed">
+    <div class = "header-log">
+      <%= image_tag  'NEMO_logo.jpg', class: 'nemo_image' %>
+      <h2><%= t '.nemo' %><h2>
     </div>
+    <div class = "header-nav">
+      <div class="item">
+        <% if current_page?(root_path)%>
+          <%= render 'items/search', url: root_path %>
+        <% end %>
+      </div>
+      <% if logged_in? %>
+        <div class="item">
+          <%= link_to items_likes_path do %>
+            <i class="fa-regular fa-heart"></i>
+          <% end %>
+        </div>
+      <% end %>
+      <div class="item">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </div>
 </header>

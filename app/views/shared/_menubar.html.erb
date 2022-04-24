@@ -1,44 +1,44 @@
 <nav>
-    <ul class="menu">
-        <% if logged_in? %>
-            <% if current_user.type == 'General' %>
-                <li class="menu-list">
-                    <div class ="menu-title">
-                        <%= link_to link_to (t'defaults.logout'), general_logout_path, class: 'menu-title', method: "delete" %>
-                    </div>
-                </li>
-            <% end %>
-            <% if current_user.type == 'Owner' %>
-                <li class="menu-list">
-                    <%= link_to (t'.admin'), admin_root_path, class: 'menu-title', method: :get %>
-                </li>
-                <li class="menu-list">
-                    <%= link_to (t'defaults.logout'), admin_owner_logout_path, class: 'menu-title', method: "delete" %>
-                </li>
-            <% end %>
-        <% else %>
-            <li class="menu-list">
-                <div class ="menu-title"><%= t'.first' %></div>
-                <ul>
-                    <li class ="menu-content">
-                        <%= link_to (t'.new_account'), new_general_path, method: :get %>
-                    </li>
-                    <li class ="menu-content">
-                        <%= link_to (t'.new_brand_account'), new_owner_path, method: :get %>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-list">
-                <div class ="menu-title"><%= t'.login' %></div>
-                <ul>
-                    <li class ="menu-content">
-                        <%= link_to (t'defaults.login'), general_login_path, method: :get %>
-                    </li>
-                    <li class ="menu-content">
-                        <%= link_to (t'.brand_login'), admin_owner_login_path, method: :get %>
-                    </li>
-                </ul>
-            </li>
-        <% end %>
-    </ul>
+  <ul class="menu">
+    <% if logged_in? %>
+      <% if current_user.type == 'General' %>
+        <li class="menu-list">
+          <div class ="menu-title">
+            <%= link_to link_to (t'defaults.logout'), general_logout_path, class: 'menu-title', method: "delete" %>
+          </div>
+        </li>
+      <% end %>
+      <% if current_user.type == 'Owner' %>
+        <li class="menu-list">
+          <%= link_to (t'.admin'), admin_root_path, class: 'menu-title', method: :get %>
+        </li>
+        <li class="menu-list">
+          <%= link_to (t'defaults.logout'), admin_owner_logout_path, class: 'menu-title', method: "delete" %>
+        </li>
+      <% end %>
+    <% else %>
+      <li class="menu-list">
+        <div class ="menu-title"><%= t'.first' %></div>
+        <ul>
+          <li class ="menu-content">
+            <%= link_to (t'.new_account'), new_general_path, method: :get %>
+          </li>
+          <li class ="menu-content">
+            <%= link_to (t'.new_brand_account'), new_owner_path, method: :get %>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-list">
+        <div class ="menu-title"><%= t'.login' %></div>
+        <ul>
+          <li class ="menu-content">
+            <%= link_to (t'defaults.login'), general_login_path, method: :get %>
+          </li>
+          <li class ="menu-content">
+            <%= link_to (t'.brand_login'), admin_owner_login_path, method: :get %>
+          </li>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
 </nav>

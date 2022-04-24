@@ -1,45 +1,45 @@
 <% content_for(:title, (t'.title')) %>
 <div class="details_form">
-    <div class="recentOrders">
-        <div class="cardHeader">
-            <h1><%= t'.title' %></h1>
-        </div>
-        <%= render partial: "edit_form", locals: { brand: @brand}%>
+  <div class="recentOrders">
+    <div class="cardHeader">
+      <h1><%= t'.title' %></h1>
     </div>
+    <%= render partial: "edit_form", locals: { brand: @brand}%>
+  </div>
 
-    <%# 写真を確認できる画面 %>
-    <div class="recentCustomers">
-        <div class="cardHeader">
-            <h1><%= t'.brand_picture' %></h1>
-        </div>
-        <div class="preview">
-            <div class="editHeader">
-                <%= t'.after_edit' %>
-            </div>
-            <div>
-                <%=image_tag  'no_image.png', id:"main-preview", size: '100x100'  %>
-            </div>
-            <div class="editHeader">
-                <%= t'.before_edit' %>
-            </div>
-            <%if @brand.brand_image.present? %>
-                <%= image_tag @brand.brand_image.url, size: '100x100' %>
-            <% end %>
-        </div>
-        <div class="cardHeader">
-            <h1><%= t'.instagram_picture' %></h1>
-        </div>
-        <div class="instagram-prevew">
-            <div class="editHeader">
-                <%= t'.after_edit' %>
-            </div>
-            <%=image_tag  'no_image.png', id:"dress-preview", size: '100x200' %>
-            <div class="editHeader">
-                <%= t'.before_edit' %>
-            </div>
-            <% if @brand.instagram_image.present? %>
-                <%= image_tag @brand.instagram_image.url, size: '100x200' %>
-            <% end %>
-        </div>
+  <%# 写真を確認できる画面 %>
+  <div class="recentCustomers">
+    <div class="cardHeader">
+      <h1><%= t'.brand_picture' %></h1>
     </div>
+    <div class="preview">
+      <div class="editHeader">
+        <%= t'.after_edit' %>
+      </div>
+      <div>
+        <%=image_tag  'no_image.png', id:"main-preview", size: '100x100'  %>
+      </div>
+      <div class="editHeader">
+        <%= t'.before_edit' %>
+      </div>
+      <%if @brand.brand_image.present? %>
+        <%= image_tag @brand.brand_image.url, size: '100x100' %>
+      <% end %>
+    </div>
+    <div class="cardHeader">
+      <h1><%= t'.instagram_picture' %></h1>
+    </div>
+    <div class="instagram-prevew">
+      <div class="editHeader">
+        <%= t'.after_edit' %>
+      </div>
+      <%=image_tag  'no_image.png', id:"dress-preview", size: '100x200' %>
+      <div class="editHeader">
+        <%= t'.before_edit' %>
+      </div>
+      <% if @brand.instagram_image.present? %>
+        <%= image_tag @brand.instagram_image.url, size: '100x200' %>
+      <% end %>
+    </div>
+  </div>
 </div>
