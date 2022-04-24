@@ -1,44 +1,44 @@
 <div class="container">
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">
-                        <span class="title"><%= t'.nemo' %></span>
-                    </a>
-                </li>
-                <% if current_user.brand.blank? %>
-                <li>
-                    <%= link_to new_admin_brand_path do %>
-                        <span class="icon"><i class="fas fa-comment-alt"></i></span>
-                        <span class="title"><%= t '.register_brand' %></span>
-                    <% end %>
-                </li>
-                <% else %>
-                <li>
-                    <%= link_to admin_brand_path(current_user.brand) do %>
-                        <span class="icon"><i class="fas fa-home"></i></span>
-                        <span class="title"><%= current_user.brand.name %></span>
-                    <% end %>
-                </li>
-                <li>
-                    <%= link_to admin_brand_items_path(current_user.brand) do %>
-                        <span class="icon"><i class="fas fa-tshirt"></i></span>
-                        <span class="title"><%= t '.item' %></span>
-                    <% end %>
-                </li>
-                <% end %>
-                <li>
-                    <%= link_to root_path do%>
-                        <span class="icon"><i class="fa-solid fa-desktop"></i></span>
-                        <span class="title"><%= t '.top_button' %></span>
-                    <% end %>
-                </li>
-                <li>
-                    <%= link_to admin_owner_logout_path, method: "delete" do %>
-                        <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
-                        <span class="title"><%= (t'defaults.logout')%></span>
-                    <% end %>
-                </li>
-            </ul>
-        </div>
-    </div>
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="#">
+          <span class="title"><%= t'.nemo' %></span>
+        </a>
+      </li>
+      <% if current_user.brand.blank? %>
+        <li>
+          <%= link_to new_admin_brand_path do %>
+            <span class="icon"><i class="fas fa-comment-alt"></i></span>
+            <span class="title"><%= t '.register_brand' %></span>
+          <% end %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to admin_brand_path(current_user.brand) do %>
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="title"><%= current_user.brand.name %></span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to admin_brand_items_path(current_user.brand) do %>
+            <span class="icon"><i class="fas fa-tshirt"></i></span>
+            <span class="title"><%= t '.item' %></span>
+          <% end %>
+        </li>
+      <% end %>
+      <li>
+        <%= link_to root_path do%>
+          <span class="icon"><i class="fa-solid fa-desktop"></i></span>
+          <span class="title"><%= t '.top_button' %></span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to admin_owner_logout_path, method: "delete" do %>
+          <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+          <span class="title"><%= (t'defaults.logout')%></span>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -4,23 +4,23 @@
     <div class="cardHeader">
       <h1><%= t '.title' %></h1>
     </div>
-          <table>
-            <thead>
-              <tr>
-                <th><%= Item.human_attribute_name(:id) %></th>
-                <th><%= Item.human_attribute_name(:name) %></th>
-                <th><%= Item.human_attribute_name(:created_at) %></th>
-                <th></th>
-                <th></th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <%= render @items %>
-            </tbody>
-          </table>
-      <div>
-        <%= button_to (t '.register_to' ), new_admin_brand_item_path(current_user.brand), class: "btn-submit",method: :get %>
-      </div>
+    <table>
+      <thead>
+        <tr>
+          <th><%= Item.human_attribute_name(:id) %></th>
+          <th><%= Item.human_attribute_name(:name) %></th>
+          <th><%= Item.human_attribute_name(:created_at) %></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @items %>
+      </tbody>
+    </table>
+    <div>
+      <%= button_to (t '.register_to' ), new_admin_brand_item_path(current_user.brand), class: "btn-submit",method: :get %>
+    </div>
   </div>
 </div>

@@ -1,30 +1,29 @@
 <% content_for(:title, (t'.sub_title')) %>
-
 <div class = 'form-index'>
-    <div class="gretel">
-        <% breadcrumb :contacts %>
-        <%= breadcrumbs separator: " > " , class: :logo %>
-    </div>
-    <div class ='title'>
-        <h1><%= t'.title' %></h1>
-        <h3><%= t'.sub_title' %></h3>
-    </div>
+  <div class="gretel">
+    <% breadcrumb :contacts %>
+    <%= breadcrumbs separator: " > " , class: :logo %>
+  </div>
+  <div class ='title'>
+    <h1><%= t'.title' %></h1>
+    <h3><%= t'.sub_title' %></h3>
+  </div>
 
-    <div class="contact">
-        <div class="contact-item">
-            <h2 class="privacy_title">
-                <%= t'.nemo_instagram' %>
-            </h2>
-            <%= link_to 'https://www.instagram.com/nemo.fashionsite/' do %>
-                <i class="fa-brands fa-instagram"></i>
-                https://www.instagram.com/nemo.fashionsite/
-            <% end %>
-        </div>
-        <div class="contact-item">
-            <h2 class="privacy_title">
-                <%= t'.mail' %>
-            </h2>
-            <a href="mailto:nemo.brands.2022&#64;gmail.com">nemo.brands.2022@gmail.com</a>
-        </div>
+  <div class="contact">
+    <div class="contact-item">
+      <h2 class="privacy_title">
+        <%= t'.nemo_instagram' %>
+      </h2>
+      <%= link_to 'https://www.instagram.com/nemo.fashionsite/' do %>
+        <i class="fa-brands fa-instagram"></i>
+        https://www.instagram.com/nemo.fashionsite/
+      <% end %>
     </div>
+    <div class="contact-item">
+      <h2 class="privacy_title">
+        <%= t'.mail' %>
+      </h2>
+      <a href="mailto:nemo.brands.2022&#64;gmail.com">nemo.brands.2022@gmail.com</a>
+    </div>
+  </div>
 </div>

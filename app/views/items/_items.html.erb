@@ -1,26 +1,26 @@
 <div class = 'item'>
-    <% if items.present? %>
-        <ul class ='item_ul'>
-            <% items.each do |item| %>
-                <li class = 'card'>
-                    <%= link_to  brand_item_path(item.brand, item) do %>
-                        <%= image_tag item.item_image.url, class: 'top-images' %>
-                        <div class = 'flex'>
-                            <%= image_tag item.brand.brand_image.url, class: 'brand-image' %>
-                            <p>
-                                <%= item.brand.name %>
-                            </p>
-                            <P class ='item_name'>
-                                <%= item.name %>
-                            </p>
-                        </div>
-                    <% end %>
-                </li>
-            <% end%>
-        </ul>
-    <% else %>
-        <div class='no-item'>
-            <p><%= (t'defaults.unregistered') %></p>
-        </div>
-    <% end %>
+  <% if items.present? %>
+    <ul class ='item_ul'>
+      <% items.each do |item| %>
+        <li class = 'card'>
+          <%= link_to  brand_item_path(item.brand, item) do %>
+            <%= image_tag item.item_image.url, class: 'top-images' %>
+            <div class = 'flex'>
+              <%= image_tag item.brand.brand_image.url, class: 'brand-image' %>
+              <p>
+                <%= item.brand.name %>
+              </p>
+              <P class ='item_name'>
+                <%= item.name %>
+              </p>
+            </div>
+          <% end %>
+        </li>
+      <% end%>
+    </ul>
+  <% else %>
+    <div class='no-item'>
+      <p><%= (t'defaults.unregistered') %></p>
+    </div>
+  <% end %>
 </div>

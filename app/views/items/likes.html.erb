@@ -1,13 +1,12 @@
 <% content_for(:title, (t'.sub_title')) %>
-
 <div class = 'site-width'>
-    <div class="gretel">
-        <% breadcrumb :items_likes, @item%>
-        <%= breadcrumbs separator: " > " , class: :logo %>
-    </div>
-    <div class ='title'>
-        <h1><%= t '.title' %></h1>
-        <h3><%= t '.sub_title' %></h3>
-    </div>
-    <%= render partial:'items', locals: {items: @like_items} %>
+  <div class="gretel">
+    <% breadcrumb :items_likes, @item%>
+    <%= breadcrumbs separator: " > " , class: :logo %>
+  </div>
+  <div class ='title'>
+    <h1><%= t '.title' %></h1>
+    <h3><%= t '.sub_title' %></h3>
+  </div>
+  <%= render partial:'items', locals: {items: @like_items} %>
 </div>

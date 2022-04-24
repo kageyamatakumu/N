@@ -1,45 +1,45 @@
 <% content_for(:title, t('.title')) %>
 <div class="details">
-    <div class="recentOrders">
-        <div class="cardHeader">
-            <h1><%= t '.title' %></h1>
-        </div>
-            <table class="table table-bordered bg-dark">
-                <tr>
-                    <th scope="row"><%= Brand.human_attribute_name(:name) %></th>
-                    <td><%= @brand.name %></td>
-                </tr>
-                <tr>
-                    <th scope="row"><%= Brand.human_attribute_name(:brand_description) %></th>
-                    <td><%= @brand.brand_description %></td>
-                </tr>
-                <tr>
-                    <th scope="row"><%= Owner.human_attribute_name(:name) %></th>
-                    <td><%= @brand.user.name %></td>
-                </tr>
-                <tr>
-                    <th scope="row"><%= Brand.human_attribute_name(:instagram_user_name) %></th>
-                    <td>
-                        <%= link_to  "https://www.instagram.com/#{@brand.instagram_user_name}/", target: :_blank, rel: "noopener noreferrer" do %>
-                            <%= @brand.instagram_user_name %>
-                        <% end %>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row"><%= Brand.human_attribute_name(:start_up) %></th>
-                    <td><%= @brand.start_up%></td>
-                </tr>
-                <tr>
-                    <th scope="row"><%= Brand.human_attribute_name(:brand_image) %></th>
-                    <td><%= image_tag @brand.brand_image.url, size: '200x200' %></td>
-                </tr>
-                <tr>
-                    <th scope="row"><%= Brand.human_attribute_name(:instagram_image) %></th>
-                    <td><%= image_tag @brand.instagram_image.url, size: '200x200' %></td>
-                </tr>
-            </table>
-            <div>
-                <%= button_to '編集', edit_admin_brand_path(@brand), method: :get, class:'btn-submit' %>
-            <div>
+  <div class="recentOrders">
+    <div class="cardHeader">
+      <h1><%= t '.title' %></h1>
     </div>
+    <table class="table table-bordered bg-dark">
+      <tr>
+        <th scope="row"><%= Brand.human_attribute_name(:name) %></th>
+        <td><%= @brand.name %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= Brand.human_attribute_name(:brand_description) %></th>
+        <td><%= @brand.brand_description %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= Owner.human_attribute_name(:name) %></th>
+        <td><%= @brand.user.name %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= Brand.human_attribute_name(:instagram_user_name) %></th>
+          <td>
+            <%= link_to  "https://www.instagram.com/#{@brand.instagram_user_name}/", target: :_blank, rel: "noopener noreferrer" do %>
+              <%= @brand.instagram_user_name %>
+            <% end %>
+          </td>
+      </tr>
+      <tr>
+        <th scope="row"><%= Brand.human_attribute_name(:start_up) %></th>
+          <td><%= @brand.start_up%></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= Brand.human_attribute_name(:brand_image) %></th>
+        <td><%= image_tag @brand.brand_image.url, size: '200x200' %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= Brand.human_attribute_name(:instagram_image) %></th>
+        <td><%= image_tag @brand.instagram_image.url, size: '200x200' %></td>
+      </tr>
+    </table>
+    <div>
+      <%= button_to '編集', edit_admin_brand_path(@brand), method: :get, class:'btn-submit' %>
+    </div>
+  </div>
 </div>

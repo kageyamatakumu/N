@@ -1,37 +1,37 @@
 <div class="details_form">
-    <div class="recentOrders">
-        <div class="cardHeader">
-            <h1><%= t'.title' %></h1>
-        </div>
-        <%= form_with model: @brand, url: admin_brands_path(@brand) do |form| %>
-            <%= render 'shared/error_messages', object: form.object %>
-            <div class="form-group">
-                <%= form.label :name %>
-                <%= form.text_field :name, class: 'form-control' %>
-            </div>
-            <div class="form-group">
-                <%= form.label :brand_description %>
-                <%= form.text_area :brand_description, class: 'form-control', rows: 10  %>
-            </div>
-            <div class="form-group">
-                <%= form.label :instagram_user_name %>
-                <%= form.text_field :instagram_user_name, class: 'form-control' %>
-            </div>
-            <div class="form-group">
-                <%= form.label :start_up %>
-                <%= form.date_select :start_up, {use_month_numbers: true}, class: 'form-control' %>
-            </div>
-            <div class="form-group">
-                <%= form.label :brand_image %>
-                <%= form.file_field :brand_image, id: 'image', class: 'form-control', accept: 'image/*' %>
-                <%= form.hidden_field :brand_image_cache %>
-            </div>
-            <div class="form-group">
-                <%= form.label :instagram_image %>
-                <%= form.file_field :instagram_image, id: 'image', class: 'form-control', accept: 'image/*' %>
-                <%= form.hidden_field :instagram_image_cache %>
-            </div>
-            <%= form.submit (t'defaults.register'), class:"btn-submit" %>
-        <% end %>
+  <div class="recentOrders">
+    <div class="cardHeader">
+      <h1><%= t'.title' %></h1>
     </div>
+    <%= form_with model: @brand, url: admin_brands_path(@brand) do |form| %>
+      <%= render 'shared/error_messages', object: form.object %>
+      <div class="form-group">
+        <%= form.label :name %>
+        <%= form.text_field :name, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= form.label :brand_description %>
+        <%= form.text_area :brand_description, class: 'form-control', rows: 10  %>
+      </div>
+      <div class="form-group">
+        <%= form.label :instagram_user_name %>
+        <%= form.text_field :instagram_user_name, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= form.label :start_up %>
+        <%= form.date_select :start_up, {use_month_numbers: true}, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= form.label :brand_image %>
+        <%= form.file_field :brand_image, id: 'image', class: 'form-control', accept: 'image/*' %>
+        <%= form.hidden_field :brand_image_cache %>
+      </div>
+      <div class="form-group">
+        <%= form.label :instagram_image %>
+        <%= form.file_field :instagram_image, id: 'image', class: 'form-control', accept: 'image/*' %>
+        <%= form.hidden_field :instagram_image_cache %>
+      </div>
+      <%= form.submit (t'defaults.register'), class:"btn-submit" %>
+    <% end %>
+  </div>
 </div>
