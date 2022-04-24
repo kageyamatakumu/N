@@ -48,3 +48,9 @@
 その方達の少しでもお役に立てるものを作れないか考えてできたのがこのサービスです。
 
 このサービスの最終的な夢は、有名セレクトショップに僕のサービスを使用したブランドがセレクトされショップに並ぶことです。
+
+## 準備
+- 画面遷移図
+    https://www.figma.com/file/VGEgz3cNm6tYXvN9VLqMqn/Nemo%E7%94%BB%E9%9D%A2%E7%A7%BB%E5%8B%95?node-id=0%3A1
+- ER図・テーブル設計
+    https://drive.google.com/file/d/12XqZQvucE4jm9RW7Fn17vAlJknNK5HiZ/view?usp=sharing
