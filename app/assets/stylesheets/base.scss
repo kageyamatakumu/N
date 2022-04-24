@@ -95,9 +95,12 @@ input,select{
 
 // お気に入りボタン
 .like_button{
-    padding-top: 20px;
-    background-color: #5A5858;
-    border: none;
+    // padding-top: 20px;
+    // background-color: #5A5858;
+    // border: none;
+    display: block;
+    margin-top: 20px;
+    color: #000;
     .fa-heart{
         font-size: 30px;
     }
@@ -108,10 +111,11 @@ input,select{
 
 @media (max-width:450px) {
     .like_button{
-        padding-top: 20px;
+        // padding-top: 20px;
+        // background-color: #5A5858;
+        // border: none;
+        margin-top: 10px;
         padding-left: 0px;
-        background-color: #5A5858;
-        border: none;
         .fa-heart{
             font-size: 25px;
         }
