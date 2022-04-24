@@ -1,139 +1,300 @@
 .item-show{
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 50px;
 }
 .item-show-wrap{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    .item-show-image{
-        width: 50%;
-        .test-image{
-            display: block;
-            width:80%;
-            height: auto;
-            border-radius: 20px;
-        }
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  .item-show-image{
+    width: 50%;
+    .test-image{
+      display: block;
+      width:80%;
+      height: auto;
+      border-radius: 20px;
     }
-    .item-show-text{
-        padding: 0 30px;
-        width:50%;
-        height: auto;
-        .item-brand-name{
-            display: flex;
-            padding: 5px;
-            border-bottom: 5px solid #dddcda;
-            align-items: flex-end;
-            justify-content: space-around;
-            .brand-name-flex{
-                display: flex;
-                align-items: flex-end;
-                margin-right: 80px;
-            }
-            .brand-image{
-                margin-right: 10px;
-                border-radius: 50%;
-                // width:80px;
-                // height: 80px;
-                width: 60px;
-                height: 60px;
-                object-fit: cover;
-            }
-            .brand_name{
-                font-size:30px;
-                padding-left: 8px;
-            }
-        }
-        .item-name{
-            text-align: center;
-            margin-top: 10px;
-            font-size: 28px;
-        }
-        .des{
-            margin-top: 60px;
-            font-size: 20px;
-            text-align: center;
-            word-wrap: break-word;
-        }
+  }
+  .item-show-text{
+    padding: 0 30px;
+    width:50%;
+    height: auto;
+    .item-brand-name{
+      display: flex;
+      padding: 5px;
+      border-bottom: 5px solid #dddcda;
+      align-items: flex-end;
+      justify-content: space-around;
+      .brand-name-flex{
+        display: flex;
+        align-items: flex-end;
+        margin-right: 80px;
+      }
+      .brand-image{
+        margin-right: 10px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+      }
+      .brand_name{
+        font-size:30px;
+        padding-left: 8px;
+      }
     }
+    .item-name{
+      text-align: center;
+      margin-top: 10px;
+      font-size: 28px;
+    }
+    .des{
+      margin-top: 60px;
+      font-size: 20px;
+      text-align: center;
+      word-wrap: break-word;
+    }
+  }
 }
 
 .item-dress{
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
-    margin-bottom: 50px;
-    .pic{
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        padding: 10px;
-        border-radius: 20px;
-    }
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+  .pic{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 20px;
+  }
 }
 
 
 .what-brand{
-    font-size: 30px;
-    margin-left:5px;
-    span{
-        margin-left: 5px;
-    }
+  font-size: 30px;
+  margin-left:5px;
+  span{
+    margin-left: 5px;
+  }
 }
 
 .brand-des{
-    margin-bottom: 50px;
-    font-size: 20px;
-    padding-top: 30px;
-    text-align: center;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
-
-    p{
-        font-size: 16px;
-    }
+  margin-bottom: 50px;
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  p{
+    font-size: 16px;
+  }
 }
 
 .other{
-    text-align: center;
+  text-align: center;
 }
-
 
 .spbody{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
-.spbody{width: 230px; background: #fff; border-radius: 30px; position: relative; border: 2px solid #C4C4C4;}
-.spbody .partsbd{width: 190px; margin: 0 auto;}
-.spbody .partshd{height: 10px; margin: 30px 0; text-align: center; position: relative;}
-.spbody .partsbd .partsspe,.spbody .partsbd .partscam{height: 10px; background: #5A5858; border-radius: 10px; display: inline-block; position: absolute; top: 0; left:50%;}
-.spbody .partsbd .partsspe{width: 10px;margin-left:-36px;}
-.spbody .partsbd .partscam{width: 50px;margin-left:-23px}
-.spbody .partsvw{height: 320px; border:1px solid #000}
-.spbody .partsbtn{width: 30px; height: 30px; border-radius: 60px; background: #5A5858; margin: 15px auto;}
-.spbody .parts{position: absolute; background: #ccc; top: 50%; left: 50%;}
-.spbody .parts2{width: 4px; height: 20px; margin: -170px 0 0 -120px;}
-.spbody .parts3{width: 4px; height: 15px; margin: -130px 0 0 -120px;}
-.spbody .parts4{width: 4px; height: 15px; margin: -90px 0 0 -120px;}
+
+.spbody{
+  width: 230px;
+  background: #fff;
+  border-radius: 30px;
+  position: relative;
+  border: 2px solid #C4C4C4;
+}
+
+.spbody .partsbd{
+  width: 190px;
+  margin: 0 auto;
+}
+
+.spbody .partshd{
+  height: 10px;
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+}
+
+.spbody .partsbd .partsspe,.spbody .partsbd .partscam{
+  height: 10px;
+  background: #5A5858;
+  border-radius: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left:50%;
+}
+
+.spbody .partsbd .partsspe{
+  width: 10px;
+  margin-left:-36px;
+}
+
+.spbody .partsbd .partscam{
+  width: 50px;
+  margin-left:-23px
+}
+
+.spbody .partsvw{
+  height: 320px;
+  border:1px solid #000
+}
+
+.spbody .partsbtn{
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  background: #5A5858;
+  margin: 15px auto;
+}
+
+.spbody .parts{
+  position: absolute;
+  background: #ccc;
+  top: 50%;
+  left: 50%;
+}
+
+.spbody .parts2{
+  width: 4px;
+  height: 20px;
+  margin: -170px 0 0 -120px;
+}
+
+.spbody .parts3{
+  width: 4px;
+  height: 15px;
+  margin: -130px 0 0 -120px;
+}
+
+.spbody .parts4{
+  width: 4px;
+  height: 15px;
+  margin: -90px 0 0 -120px;
+}
 
 .iphone_image{
-    width: 187px;
-    height: 320px;
-    object-fit: cover;
+  width: 187px;
+  height: 320px;
+  object-fit: cover;
 }
 
 .insta_icon{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .about{
-    padding-top: 50px;
+  padding-top: 50px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 5px solid #dddcda;
+  border-bottom: 5px solid #dddcda;
+  .about-title{
+    display: flex;
+  }
+  img{
+    margin-left:5%;
+  }
+  h3{
+    border-bottom:3px solid #dddcda ;
+    margin-left: 5px;
+  }
+  .about-des{
+    padding-left: 25%;
+    font-size: 20px;
+  }
+}
+
+.nemo-insta{
+  margin-top: 10px;
+  padding-bottom: 50px;
+  .nemo-news{
+    padding-left: 70%;
+    text-align: center;
+    .fa-brands{
+      font-size: 70px;
+      color: #dddcda
+    }
+    .nemo-info{
+      text-align: center;
+    }
+  }
+}
+
+// レスポンシブ(iphone)
+@media (max-width: 1300px){
+  .item-show{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .item-show-wrap{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    .item-show-image{
+      width: 50%;
+      .test-image{
+        width:100%;
+      }
+    }
+    .item-show-text{
+      .item-brand-name{
+        display: flex;
+        padding: 5px;
+        border-bottom: 5px solid #dddcda;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        .brand-image{
+          width: 50px;
+          height: 50px;
+        }
+        .brand_name{
+          font-size:24px;
+          padding-left: 8px;
+        }
+      }
+      .item-name{
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      .des{
+        width: 100%;
+        margin-top: 15px;
+        font-size: 16px;
+      }
+    }
+  }
+  .item-dress{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .pic{
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      padding: 10px;
+      border-radius: 20px;
+    }
+  }
+  .brand-des{
+    font-size: 16px;
+  }
+  .about{
+    padding-top: 30px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -142,380 +303,271 @@
     border-top: 5px solid #dddcda;
     border-bottom: 5px solid #dddcda;
     .about-title{
-        display: flex;
+      display: flex;
     }
     img{
-        margin-left:5%;
+      margin-left:5%;
     }
     h3{
-        border-bottom:3px solid #dddcda ;
-        margin-left: 5px;
+      border-bottom:3px solid #dddcda ;
+      margin-left: 5px;
     }
     .about-des{
-        padding-left: 25%;
-        font-size: 20px;
+      padding-left: 25%;
+      font-size: 16px;
     }
-}
-
-.nemo-insta{
+  }
+  .nemo-insta{
     margin-top: 10px;
+    padding-bottom: 30px;
     .nemo-news{
-        padding-left: 70%;
+      padding-left: 70%;
+      text-align: center;
+      .fa-brands{
+        font-size: 70px;
+      }
+      .nemo-info{
         text-align: center;
-        .fa-brands{
-            font-size: 70px;
-            color: #dddcda
-        }
-        .nemo-info{
-            text-align: center;
-        }
+        font-size: 12px;
+      }
     }
-    padding-bottom: 50px;
-}
-
-// レスポンシブ(iphone)
-
-@media (max-width: 1300px){
-    .item-show{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .item-show-wrap{
-        margin-top: 20px;
-        margin-bottom: 30px;
-        display: flex;
-        .item-show-image{
-            width: 50%;
-            .test-image{
-                width:100%;
-            }
-        }
-        .item-show-text{
-            .item-brand-name{
-                display: flex;
-                padding: 5px;
-                border-bottom: 5px solid #dddcda;
-                align-items: flex-end;
-                justify-content: space-evenly;
-                .brand-image{
-                    width: 50px;
-                    height: 50px;
-                }
-                .brand_name{
-                    font-size:24px;
-                    padding-left: 8px;
-                }
-            }
-            .item-name{
-                margin-top: 10px;
-                font-size: 20px;
-            }
-            .des{
-                width: 100%;
-                margin-top: 15px;
-                font-size: 16px;
-            }
-        }
-    }
-    .item-dress{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-        .pic{
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            padding: 10px;
-            border-radius: 20px;
-        }
-    }
-
-    .brand-des{
-        font-size: 16px;
-    }
-
-
-    .about{
-        padding-top: 30px;
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        border-top: 5px solid #dddcda;
-        border-bottom: 5px solid #dddcda;
-        .about-title{
-            display: flex;
-        }
-        img{
-            margin-left:5%;
-        }
-        h3{
-            border-bottom:3px solid #dddcda ;
-            margin-left: 5px;
-        }
-        .about-des{
-            padding-left: 25%;
-            font-size: 16px;
-        }
-    }
-
-    .nemo-insta{
-        margin-top: 10px;
-        padding-bottom: 30px;
-        .nemo-news{
-            padding-left: 70%;
-            text-align: center;
-            .fa-brands{
-                font-size: 70px;
-            }
-            .nemo-info{
-                text-align: center;
-                font-size: 12px;
-            }
-        }
-    }
+  }
 }
 
 @media (max-width: 991px){
-    .item-show{
-        padding-left: 5%;
-        padding-right: 5%;
+  .item-show{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .item-show-wrap{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    .item-show-image{
+      width: 50%;
+      .test-image{
+        width:100%;
+        }
     }
-    .item-show-wrap{
-        margin-top: 20px;
-        margin-bottom: 30px;
+    .item-show-text{
+      .item-brand-name{
         display: flex;
-        .item-show-image{
-            width: 50%;
-            .test-image{
-                width:100%;
-            }
-        }
-        .item-show-text{
-            .item-brand-name{
-                display: flex;
-                padding: 5px;
-                border-bottom: 5px solid #dddcda;
-                align-items: flex-end;
-                justify-content: space-evenly;
-                .brand-image{
-                    width: 50px;
-                    height: 50px;
-                }
-                .brand_name{
-                    font-size:24px;
-                    padding-left: 8px;
-                }
-            }
-            .item-name{
-                margin-top: 10px;
-                font-size: 20px;
-            }
-            .des{
-                width: 100%;
-                margin-top: 15px;
-                font-size: 16px;
-            }
-        }
-    }
-    .item-dress{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-        .pic{
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            padding: 10px;
-            border-radius: 20px;
-        }
-    }
-
-    .brand-des{
-        font-size: 16px;
-    }
-
-
-    .about{
-        padding-top: 30px;
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        border-top: 5px solid #dddcda;
+        padding: 5px;
         border-bottom: 5px solid #dddcda;
-        .about-title{
-            display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        .brand-image{
+          width: 50px;
+          height: 50px;
         }
-        img{
-            margin-left:5%;
+        .brand_name{
+          font-size:24px;
+          padding-left: 8px;
         }
-        h3{
-            border-bottom:3px solid #dddcda ;
-            margin-left: 5px;
-        }
-        .about-des{
-            padding-left: 25%;
-            font-size: 16px;
-        }
-    }
-
-    .nemo-insta{
+      }
+      .item-name{
         margin-top: 10px;
-        padding-bottom: 30px;
-        .nemo-news{
-            padding-left: 70%;
-            text-align: center;
-            .fa-brands{
-                font-size: 70px;
-            }
-            .nemo-info{
-                text-align: center;
-                font-size: 12px;
-            }
-        }
+        font-size: 20px;
+      }
+      .des{
+        width: 100%;
+        margin-top: 15px;
+        font-size: 16px;
+      }
     }
+  }
+  .item-dress{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .pic{
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      padding: 10px;
+      border-radius: 20px;
+    }
+  }
+  .brand-des{
+    font-size: 16px;
+  }
+  .about{
+    padding-top: 30px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 5px solid #dddcda;
+    border-bottom: 5px solid #dddcda;
+    .about-title{
+      display: flex;
+    }
+    img{
+      margin-left:5%;
+    }
+    h3{
+      border-bottom:3px solid #dddcda ;
+      margin-left: 5px;
+    }
+    .about-des{
+      padding-left: 25%;
+      font-size: 16px;
+    }
+  }
+  .nemo-insta{
+    margin-top: 10px;
+    padding-bottom: 30px;
+    .nemo-news{
+      padding-left: 70%;
+      text-align: center;
+      .fa-brands{
+        font-size: 70px;
+      }
+      .nemo-info{
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
 }
 
-
 @media (max-width:630px) {
-    .item-show{
-        padding-left: 5%;
-        padding-right: 5%;
-        .item-show-wrap{
-            margin-top: 10px;
-            margin-bottom: 30px;
-            display: block;
-            .item-show-image{
-                width: 100%;
-                .test-image{
-                    width:100%;
-                    height: auto;
-                    border-radius: 20px;
-                }
-            }
-            .item-show-text{
-                width: 100%;
-                margin-top: 0px;
-                padding: 0;
-                .item-brand-name{
-                    justify-content: space-around;
-                    border-bottom: 2px solid #dddcda;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 70%;
-                    .brand-name-flex{
-                        margin-right: 0px;
-                    }
-                    .brand-image{
-                        width:30px;
-                        height: 30px;
-                        padding-top: 0;
-                    }
-                    .brand_name{
-                        font-size: 18px;
-                    }
-                }
-                .item-name{
-                    margin-top: 0px;
-                    font-size: 15px;
-                }
-                .des{
-                    margin-top: 10px;
-                    font-size: 13px;
-                    p{
-                        font-size: 13px;
-                    }
-                }
-            }
+  .item-show{
+    padding-left: 5%;
+    padding-right: 5%;
+    .item-show-wrap{
+      margin-top: 10px;
+      margin-bottom: 30px;
+      display: block;
+      .item-show-image{
+        width: 100%;
+        .test-image{
+          width:100%;
+          height: auto;
+          border-radius: 20px;
         }
-        .item-dress{
-            margin-top:10px;
-            margin-bottom: 30px;
-            padding: 0px;
-            display: block;
-            text-align: center;
-            .pic{
-                object-fit: cover;
-                width: 300px;
-                height: 300px;
-                padding: 0px;
-            }
-            p{
-                font-size: 13px;
-            }
+      }
+      .item-show-text{
+        width: 100%;
+        margin-top: 0px;
+        padding: 0;
+        .item-brand-name{
+          justify-content: space-around;
+          border-bottom: 2px solid #dddcda;
+          margin-left: auto;
+          margin-right: auto;
+          width: 70%;
+          .brand-name-flex{
+            margin-right: 0px;
+          }
+          .brand-image{
+            width:30px;
+            height: 30px;
+            padding-top: 0;
+          }
+          .brand_name{
+            font-size: 18px;
+          }
         }
-        .brand-des{
-            width: 100%;
+        .item-name{
+          margin-top: 0px;
+          font-size: 15px;
+        }
+        .des{
+          margin-top: 10px;
+          font-size: 13px;
+          p{
             font-size: 13px;
-            padding: 0px;
-            border-bottom: initial;
-            margin-bottom: 30px;
-            p{
-                font-size: 13px;
-            }
+          }
         }
-        .other{
-            padding-top: 20px;
-            margin-bottom: 0px;
-            font-size: 14px;
-            width:50%;
-            margin-left: auto;
-            margin-right: auto;
-            h2{
-                font-size: 16px;
-            }
-        }
-        .insta_icon{
-            margin-top: 10px;
-        }
-        .about{
-            padding-top: 20px;
-            padding-bottom: 20px;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            border-top: 3px solid #dddcda;
-            border-bottom: 3px solid #dddcda;
-            .about-title{
-                align-items: center;
-                img{
-                    margin-left: 0px;
-                    width: 30px;
-                    height: 30px;
-                }
-                h3{
-                    border-bottom:1px solid #dddcda ;
-                    margin-left: 3px;
-                    font-size: 14px;
-                }
-            }
-            .about-des{
-                padding-left: 0px;
-                font-size: 14px;
-                br {
-                    display: none;
-                }
-            }
-            .nemo-insta{
-                padding-bottom: 0px;
-                .nemo-news{
-                    margin-left: auto;
-                    .nemo-info{
-                        font-size: 10px;
-                        br {
-                            display: none;
-                        }
-                    }
-                    .fa-brands{
-                        font-size: 30px;
-                    }
-                }
-            }
-        }
+      }
     }
+    .item-dress{
+      margin-top:10px;
+      margin-bottom: 30px;
+      padding: 0px;
+      display: block;
+      text-align: center;
+      .pic{
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        padding: 0px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+    .brand-des{
+      width: 100%;
+      font-size: 13px;
+      padding: 0px;
+      border-bottom: initial;
+      margin-bottom: 30px;
+      p{
+        font-size: 13px;
+      }
+    }
+    .other{
+      padding-top: 20px;
+      margin-bottom: 0px;
+      font-size: 14px;
+      width:50%;
+      margin-left: auto;
+      margin-right: auto;
+      h2{
+        font-size: 16px;
+      }
+    }
+    .insta_icon{
+      margin-top: 10px;
+    }
+    .about{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-top: 3px solid #dddcda;
+      border-bottom: 3px solid #dddcda;
+      .about-title{
+        align-items: center;
+        img{
+          margin-left: 0px;
+          width: 30px;
+          height: 30px;
+        }
+        h3{
+          border-bottom:1px solid #dddcda ;
+          margin-left: 3px;
+          font-size: 14px;
+        }
+      }
+      .about-des{
+        padding-left: 0px;
+        font-size: 14px;
+        br {
+          display: none;
+        }
+      }
+      .nemo-insta{
+        padding-bottom: 0px;
+        .nemo-news{
+          margin-left: auto;
+          .nemo-info{
+            font-size: 10px;
+            br {
+              display: none;
+            }
+          }
+          .fa-brands{
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
 }
