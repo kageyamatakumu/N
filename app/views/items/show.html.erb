@@ -87,6 +87,17 @@
   <div class = 'insta_icon'>
     <p><%= t'.insta_icon' %></p>
   </div>
+  <div class = "share">
+    <%= t'.sns_share' %>
+  </div>
+  <div class = 'sns'>
+    <%= link_to "//timeline.line.me/social-plugin/share?url=#{@sns_url}&text=", class: "btn-line" do%>
+      <%= t'.line' %>
+    <%end%>
+    <%= link_to "https://twitter.com/share?url=#{@sns_url}&text=", class: "btn-twitter" do%>
+      <%= t'.twitter' %>
+    <%end%>
+  </div>
   <div class = 'about'>
     <div class ='about-title'>
       <%= image_tag 'NEMO_logo.jpg', size: "60x60"%>
@@ -101,7 +112,7 @@
         <div class = 'nemo-info'>公式SNSにて<br>新着情報を配信</div>
           <%= link_to 'https://www.instagram.com/nemo.fashionsite/' do %>
             <i class="fa-brands fa-instagram"></i>
-         <% end %>
+          <% end %>
       </div>
     </div>
   </div>
