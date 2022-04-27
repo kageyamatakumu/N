@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: %i[ show ]
+  before_action :sns_share, only: %i[ show ]
 
   def index
     @q = Item.ransack(params[:q])
@@ -21,6 +22,10 @@ class ItemsController < ApplicationController
   def set_item
     @brand = Brand.find(params[:brand_id])
     @item = @brand.items.find(params[:id])
+  end
+
+  def sns_share
+    @sns_url = request.url
   end
 
 end

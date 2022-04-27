@@ -21,6 +21,9 @@ ja:
         other_ja: '他のアイテムはこちら'
         about_us: 'About Us'
         insta_icon: '※iPhoneをクリックでInsatagramへ'
+        sns_share: 'SNSでシェア'
+        line: 'LINE'
+        twitter: 'Twitter'
   owners:
     new:
       title: 'Join'
