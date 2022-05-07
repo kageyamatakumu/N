@@ -1,9 +1,11 @@
 <header class = "header">
   <div class = "header-fixed">
-    <div class = "header-log">
-      <%= image_tag  'NEMO_logo.jpg', class: 'nemo_image' %>
-      <h2><%= t '.nemo' %><h2>
-    </div>
+    <%= link_to root_path do %>
+      <div class = "header-log">
+        <%= image_tag  'NEMO_logo.jpg', class: 'nemo_image' %>
+        <h2><%= t '.nemo' %><h2>
+      </div>
+    <% end %>
     <div class = "header-nav">
       <div class="item">
         <% if current_page?(root_path)%>
