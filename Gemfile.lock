@@ -134,6 +134,8 @@ GEM
       dry-core (~> 0.5, >= 0.5)
       dry-initializer (~> 3.0)
       dry-schema (~> 1.8, >= 1.8.0)
+    enum_help (0.0.18)
+      activesupport (>= 3.0.0)
     erubi (1.10.0)
     excon (0.92.2)
     factory_bot (6.2.1)
@@ -380,6 +382,7 @@ DEPENDENCIES
   capybara
   carrierwave
   config
+  enum_help
   factory_bot_rails
   fog-aws
   font-awesome-sass
