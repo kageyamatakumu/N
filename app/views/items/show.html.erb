@@ -92,9 +92,11 @@
   </div>
   <div class = 'sns'>
     <%= link_to "//timeline.line.me/social-plugin/share?url=#{@sns_url}&text=", class: "btn-line" do%>
+      <i class="fa-brands fa-line"></i>
       <%= t'.line' %>
     <%end%>
     <%= link_to "https://twitter.com/share?url=#{@sns_url}&text=", class: "btn-twitter" do%>
+      <i class="fa-brands fa-twitter"></i>
       <%= t'.twitter' %>
     <%end%>
   </div>
