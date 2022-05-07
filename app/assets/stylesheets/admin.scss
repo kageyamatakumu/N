@@ -229,6 +229,9 @@ body{
   outline: 0;
   box-shadow: 0 0 0 2px var(--bulue) inset;
 }
+.form_button{
+  margin-top: 20px;
+}
 .details_form .recentOrders form .btn{
   margin-top: 20px;
 }
@@ -363,6 +366,13 @@ body{
   margin-bottom: 15px;
 }
 
+.confirm_page{
+  display: block;
+  text-decoration: none;
+  color: #287bff;
+  margin-top: 10px;
+}
+
 // レスポンシブ
 @media (max-width: 991px){
   .navigation{
@@ -470,6 +480,9 @@ body{
   .btn-submit{
     margin-left: auto;
     margin-right: auto;
+    font-size: 10px;
+  }
+  .confirm_page{
     font-size: 10px;
   }
 }
