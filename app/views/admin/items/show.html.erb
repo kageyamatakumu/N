@@ -27,4 +27,7 @@
       </tr>
     </table>
   </div>
+  <% if @item.draft? %>
+    <%= link_to '投稿をプレビュー(下書きを見る)', confirm_admin_brand_item_path(@item.brand, @item), class: 'confirm_page' %>
+  <% end %>
 </div>
