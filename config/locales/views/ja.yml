@@ -123,6 +123,17 @@ ja:
         code_picture: 'コーディネート写真'
       show:
         title: 'アイテム情報'
+      confirm:
+        cordinate: 'Cordinate'
+        what: 'What is'
+        question: '?'
+        other_en: 'Other Products'
+        other_ja: '他のアイテムはこちら'
+        about_us: 'About Us'
+        insta_icon: '※iPhoneをクリックでInsatagramへ'
+        sns_share: 'SNSでシェア'
+        line: 'LINE'
+        twitter: 'Twitter'
     owner_sessions:
       new:
         title: 'オーナー様ログイン画面'

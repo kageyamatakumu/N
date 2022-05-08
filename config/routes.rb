@@ -31,7 +31,11 @@ Rails.application.routes.draw do
     post 'owner_login', to: 'owner_sessions#create'
     delete 'owner_logout', to: 'owner_sessions#destroy'
     resources :brands, only: %i[show new create edit update] do
-      resources :items, only: %i[index new create show edit update destroy], controller: 'items'
+      resources :items, only: %i[index new create show edit update destroy ], controller: 'items' do
+        member do
+          get 'confirm'
+        end
+      end
     end
   end
 

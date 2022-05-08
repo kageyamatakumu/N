@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   before_action :sns_share, only: %i[ show ]
 
   def index
-    @q = Item.ransack(params[:q])
+    @q = Item.published.ransack(params[:q])
     @items = @q.result.includes([brand: :user]).order("RANDOM()")
   end
 

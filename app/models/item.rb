@@ -14,6 +14,12 @@ class Item < ApplicationRecord
   FILE_NUMBER_LIMIT = 3
   validate  :validate_number_of_files
 
+  enum status: { published: 0, draft: 1 }
+
+  def draft
+    self.status = "draft"
+  end
+
   private
 
   def validate_number_of_files

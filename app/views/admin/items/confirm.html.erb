@@ -1,16 +1,8 @@
-<% content_for(:title, @item.brand.name) %>
-
 <div class = 'item-show'>
-  <% breadcrumb :items_show, @item%>
-  <%= breadcrumbs separator: " > " , class: :logo %>
+  <%= link_to '管理画面へ', admin_brand_item_path(@item.brand, @item), class: "confirm"%>
   <div class = "item-show-wrap">
     <div class = "item-show-image">
       <%= image_tag @item.item_image.url, class: 'test-image' %>
-      <div class="like">
-        <% if current_user %>
-          <%= render 'like_button', item: @item ,liked: current_user.like?(@item) %>
-        <% end %>
-      </div>
     </div>
     <div class = "item-show-text">
       <div class = 'item-brand-name'>

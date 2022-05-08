@@ -18,6 +18,7 @@ ja:
         item_image: 'メイン写真'
         dress_images: 'コーディネート写真'
         created_at: '投稿日'
+        status: '状態'
       general:
         name: 'ユーザーネーム'
         email: 'メールアドレス'

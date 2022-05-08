@@ -1,6 +1,6 @@
 class Admin::ItemsController < Admin::BaseController
-  before_action :set_item, only: %i[edit update show destroy ]
-  before_action :verify_access, only: %i[ show edit update destroy]
+  before_action :set_item, only: %i[edit update show destroy confirm ]
+  before_action :verify_access, only: %i[ show edit update destroy confirm]
 
   def index
     @brand = Brand.find(params[:brand_id])
@@ -39,10 +39,15 @@ class Admin::ItemsController < Admin::BaseController
     redirect_to admin_brand_items_path
   end
 
+  def confirm
+    render :layout => 'layouts/application'
+    @item_draft = @item.draft
+  end
+
   private
 
   def item_params
-    params.require(:item).permit(:name, :description, :item_image, :item_image_cache, { dress_images: [] })
+    params.require(:item).permit(:name, :description, :item_image, :item_image_cache, { dress_images: [] }, :status)
   end
 
   def set_item
