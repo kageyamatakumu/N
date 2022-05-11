@@ -28,6 +28,11 @@ crumb :items_likes do
   parent :root
 end
 
+crumb :items_history do
+  link " 閲覧履歴", items_history_path
+  parent :root
+end
+
 crumb :privacy do
   link "プライバシーポリシー", privacy_path
   parent :root
