@@ -13,6 +13,9 @@ ja:
     likes:
       title: 'Your Favorite'
       sub_title: 'お気に入り'
+    histories:
+      title: 'Browsing History'
+      sub_title: '閲覧履歴'
     show:
         cordinate: 'Cordinate'
         what: 'What is'
@@ -87,6 +90,8 @@ ja:
       new_account: '新規会員登録'
       new_brand_account: '新規ブランド登録'
       brand_login: 'ログイン(ブランドオーナー)'
+      likes: 'お気に入りアイテム'
+      history: '閲覧履歴'
 
 
   admin:
