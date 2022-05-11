@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get 'items/likes', to: 'items#likes'
   resources :likes, only: %i[create destroy]
 
+  get 'items/history', to: 'items#histories'
+
   # 一般ユーザー アクション用
   resources :brands, only: %i[show] do
     resources :items, only: %i[show], controller: 'items'
