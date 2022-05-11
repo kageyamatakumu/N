@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_27_124818) do
+ActiveRecord::Schema.define(version: 2022_05_08_014653) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,15 @@ ActiveRecord::Schema.define(version: 2022_04_27_124818) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_brands_on_user_id"
+  end
+
+  create_table "browsing_histories", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "item_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["item_id"], name: "index_browsing_histories_on_item_id"
+    t.index ["user_id"], name: "index_browsing_histories_on_user_id"
   end
 
   create_table "items", force: :cascade do |t|
@@ -66,6 +75,8 @@ ActiveRecord::Schema.define(version: 2022_04_27_124818) do
   end
 
   add_foreign_key "brands", "users"
+  add_foreign_key "browsing_histories", "items"
+  add_foreign_key "browsing_histories", "users"
   add_foreign_key "items", "brands"
   add_foreign_key "likes", "items"
   add_foreign_key "likes", "users"
