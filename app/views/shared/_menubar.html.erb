@@ -1,6 +1,12 @@
 <nav>
   <ul class="menu">
     <% if logged_in? %>
+        <li class="menu-list">
+          <%= link_to (t'.likes'), items_likes_path, class: 'menu-title', method: :get %>
+        </li>
+        <li class="menu-list">
+          <%= link_to (t'.history'), items_history_path, class: 'menu-title', method: :get %>
+        </li>
       <% if current_user.type == 'General' %>
         <li class="menu-list">
           <div class ="menu-title">
