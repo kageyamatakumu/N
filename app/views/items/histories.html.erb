@@ -1,0 +1,12 @@
+<% content_for(:title, (t'.sub_title')) %>
+<div class = 'site-width'>
+  <div class="gretel">
+    <% breadcrumb :items_history, @browsing_history_items%>
+    <%= breadcrumbs separator: " > " , class: :logo %>
+  </div>
+  <div class ='title'>
+    <h1><%= t '.title' %></h1>
+    <h3><%= t '.sub_title' %></h3>
+  </div>
+  <%= render partial:'items', locals: {items: @browsing_history_items} %>
+</div>
