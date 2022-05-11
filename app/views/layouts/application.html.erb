@@ -30,7 +30,9 @@
     <%= render 'shared/menubar' %>
     <%= yield %>
     <% unless current_page?(items_likes_path)%>
-      <%= render 'shared/footer' %>
+      <% unless current_page?(items_history_path)%>
+        <%= render 'shared/footer' %>
+      <% end %>
     <% end %>
   </body>
 </html>
