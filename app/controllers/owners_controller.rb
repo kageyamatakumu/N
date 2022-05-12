@@ -20,6 +20,6 @@ class OwnersController < ApplicationController
   end
 
   def notifier
-    Slack::Notifier.new(ENV['Slack'])
+    Slack::Notifier.new(ENV['SLACK'])
   end
 end
