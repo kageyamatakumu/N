@@ -4,6 +4,9 @@ class Item < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_many :like_items, through: :likes, source: :item
 
+  has_many :browsing_histories, dependent: :destroy
+  has_many :browsing_history_items, through: :browsing_histories, source: :item
+
   mount_uploader :item_image, ItemImageUploader
   mount_uploaders :dress_images, DressImageUploader
 

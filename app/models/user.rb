@@ -4,6 +4,9 @@ class User < ApplicationRecord
   has_many :likes, dependent: :destroy, foreign_key: 'user_id'
   has_many :like_items, through: :likes, source: :item
 
+  has_many :browsing_histories, dependent: :destroy
+  has_many :browsing_history_items, through: :browsing_histories, source: :item
+
   validates :password, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
