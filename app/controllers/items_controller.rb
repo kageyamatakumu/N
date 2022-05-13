@@ -8,20 +8,22 @@ class ItemsController < ApplicationController
   end
 
   def show
-    history_item = @item.browsing_histories.new
-    history_item.user_id = current_user.id
+    if current_user
+      history_item = @item.browsing_histories.new
+      history_item.user_id = current_user.id
 
-    if current_user.browsing_histories.exists?(item_id: "#{params[:id]}")
-      old_history = current_user.browsing_histories.find_by(item_id: "#{params[:id]}")
-      old_history.destroy
-    end
+      if current_user.browsing_histories.exists?(item_id: "#{params[:id]}")
+        old_history = current_user.browsing_histories.find_by(item_id: "#{params[:id]}")
+        old_history.destroy
+      end
 
-    history_item.save
+      history_item.save
 
-    history_stock_limit = 10
-    histories = current_user.browsing_histories.all
-    if histories.count > history_stock_limit
-      histories[0].destroy
+      history_stock_limit = 10
+      histories = current_user.browsing_histories.all
+      if histories.count > history_stock_limit
+        histories[0].destroy
+      end
     end
   end
 
