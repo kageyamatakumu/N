@@ -12,8 +12,8 @@ class ItemsController < ApplicationController
       history_item = @item.browsing_histories.new
       history_item.user_id = current_user.id
 
-      if current_user.browsing_histories.exists?(item_id: "#{params[:id]}")
-        old_history = current_user.browsing_histories.find_by(item_id: "#{params[:id]}")
+      if current_user.browsing_histories.exists?(item_id: params[:id])
+        old_history = current_user.browsing_histories.find_by(item_id: params[:id])
         old_history.destroy
       end
 
