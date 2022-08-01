@@ -27,7 +27,7 @@ class User < ApplicationRecord
     like_items.include?(item)
   end
 
-  def my_object?(object)
+  def own?(object)
     object.user_id == id
   end
 end

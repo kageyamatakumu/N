@@ -2,6 +2,9 @@ class ItemsController < ApplicationController
   before_action :set_item, only: %i[ show ]
   before_action :sns_share, only: %i[ show ]
 
+  # 閲覧履歴の最大数を10件に指定
+  HISTORY_STOCK_LIMIT = 10
+
   def index
     @q = Item.published.ransack(params[:q])
     @items = @q.result.includes([brand: :user]).order("RANDOM()")
@@ -9,8 +12,7 @@ class ItemsController < ApplicationController
 
   def show
     if current_user
-      history_item = @item.browsing_histories.new
-      history_item.user_id = current_user.id
+      history_item = @item.browsing_histories.new(user_id: current_user.id)
 
       if current_user.browsing_histories.exists?(item_id: params[:id])
         old_history = current_user.browsing_histories.find_by(item_id: params[:id])
@@ -19,9 +21,8 @@ class ItemsController < ApplicationController
 
       history_item.save
 
-      history_stock_limit = 10
       histories = current_user.browsing_histories.all
-      if histories.count > history_stock_limit
+      if histories.count > HISTORY_STOCK_LIMIT
         histories[0].destroy
       end
     end
